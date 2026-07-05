@@ -1,0 +1,14 @@
+filename,eval_root,release_tag,size_bytes,sha256,source_file_count
+paper-main50-standard-opencode.tar.gz,paper-main50-standard-opencode,flowark-evaluation-logs-v1,168344465,f337c85fe610546d6a4e12a2d069b50b03a53a6ce04279d74707e9b7a24130f6,37480
+paper-main50-flowark-enabled-opencode.tar.gz,paper-main50-flowark-enabled-opencode,flowark-evaluation-logs-v1,220910967,6ace0b33f2fee4978bae603fdc5f999077f5f8f03e4146d2d3b8b1bad8ff0df4,46543
+paper-strat15-glm-4-7-standard-opencode.tar.gz,paper-strat15-glm-4-7-standard-opencode,flowark-evaluation-logs-v1,47280875,a6ad1d44711bf4df09981ac2d3dcb5f5617e4c6275f365cc9b97d571704da1c9,10280
+paper-strat15-glm-4-7-flowark-enabled-opencode.tar.gz,paper-strat15-glm-4-7-flowark-enabled-opencode,flowark-evaluation-logs-v1,60461647,aebcb5ca217b14fef337c140f8ff0429daca79ba18ce411166041598c7aaa31d,12755
+paper-strat15-deepseek-v4-flash-standard-opencode.tar.gz,paper-strat15-deepseek-v4-flash-standard-opencode,flowark-evaluation-logs-v1,44889478,0b2e07b3ebcfc9ce602942e778747d4b768617cde1713a039f5f32c3bc8f6bca,10280
+paper-strat15-deepseek-v4-flash-flowark-enabled-opencode.tar.gz,paper-strat15-deepseek-v4-flash-flowark-enabled-opencode,flowark-evaluation-logs-v1,53215283,1e047895b3bccb5d9ed1f5e690e6399bd450cc1b090a1c1c285ed3b33862e07a,12671
+paper-strat15-minimax-m3-standard-opencode.tar.gz,paper-strat15-minimax-m3-standard-opencode,flowark-evaluation-logs-v1,31404582,71ac5c15258695aa640bcbb5ac94b8c509b0d2f7e70dad80f29c0983f5638474,10280
+paper-strat15-minimax-m3-flowark-enabled-opencode.tar.gz,paper-strat15-minimax-m3-flowark-enabled-opencode,flowark-evaluation-logs-v1,37346332,6c8fde6d37369f14d2295d8dacfe9b56febc543681ff249a4bd81d79a28368a3,12607
+paper-strat15-mem0-enabled-opencode.tar.gz,paper-strat15-mem0-enabled-opencode,flowark-evaluation-logs-v1,40619212,c2d0242d4cd5e6e4db405d99e94a96e31cb586dc47c0977eef3692d4bbf47aef,11564
+paper-strat15-analysis-log-rag-baseline.tar.gz,paper-strat15-analysis-log-rag-baseline,flowark-evaluation-logs-v1,82209832,55d3f76afef2ce8cda081f9d13f2079eadbc2e15ec43277dfbd9547c424f41b1,16700
+paper-strat15-ablation-m1-generic.tar.gz,paper-strat15-ablation-m1-generic,flowark-evaluation-logs-v1,62270061,1c4556bc896b2a31535737d8da86ebd82c25e6b67402bdf61bfa6ac6f6447641,12797
+paper-strat15-ablation-m2-embedding.tar.gz,paper-strat15-ablation-m2-embedding,flowark-evaluation-logs-v1,63733487,3403e00c08d8183cf1b507badd4b092499e27a410e213b5940586d766ebd1b26,12836
+paper-strat15-ablation-m3-start-only.tar.gz,paper-strat15-ablation-m3-start-only,flowark-evaluation-logs-v1,56497782,9ac6b2c430fc57900c4bb7aee40785cec35f652ebc912d2929c6ab55939a0577,12848

@@ -1,0 +1,9 @@
+AGENTS.md
+artifact-data/
+release-assets/eval-logs/
+release-assets/source-code-archives/
+.pytest_cache/
+.venv/
+__pycache__/
+*.pyc
+.env

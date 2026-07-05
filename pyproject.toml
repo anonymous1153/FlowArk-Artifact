@@ -1,0 +1,20 @@
+[project]
+name = "flowark"
+version = "0.1.0"
+description = "FlowArk - Data Flow Analysis Framework based on OpenCode"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115.0",
+    "httpx[socks]>=0.28.0",
+    "openai>=1.40.0",
+    "pyyaml>=6.0.0",
+    "python-dotenv>=1.0.0",
+    "uvicorn>=0.30.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+]

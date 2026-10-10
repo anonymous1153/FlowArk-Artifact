@@ -1,0 +1,33 @@
+# FlowArk runtime 配置
+# 这份配置仅包含普通业务参数；外部服务 URL / API Key 请放在仓库根 .env。
+
+out_dir: "runs"
+agent_adapter: "opencode"
+opencode_binary: null
+opencode_model: ""
+opencode_provider: "anthropic"
+opencode_after_tool_delivery: "no_reply_context"
+opencode_bash_policy: "read_only_guarded"
+opencode_structured_output: true
+agent_mode: "flowark"
+
+knowledge_mode: "warm"
+knowledge_allow_repeat_injection_within_session: true
+auto_knowledge_cycle: true
+runtime_injection_mode: "context_aware"
+knowledge_distillation_mode: "with_selection_rules"
+knowledge_packaging_mode: "dsl_rule"
+auto_knowledge_validate_mode: "static"
+knowledge_reuse_digest_mode: "off"
+
+knowledge_top_k: 3
+knowledge_recall_top_m: 8
+knowledge_min_score: 1.0
+knowledge_injection_char_budget: 4000
+knowledge_delta_char_budget: null
+knowledge_realtime_min_interval_ms: 1500
+# legacy: hook-index repeat gaps are still parsed for old configs, but ReAct gaps below are the default path.
+knowledge_repeat_summary_hook_gap: 3
+knowledge_repeat_full_hook_gap: 10
+knowledge_repeat_summary_react_gap: 0
+knowledge_repeat_full_react_gap: 1

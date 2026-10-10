@@ -1,0 +1,10 @@
+AGENTS.md
+REVIEW.md
+.DS_Store
+artifact-data/
+release-assets/
+.pytest_cache/
+.venv/
+__pycache__/
+*.pyc
+.env

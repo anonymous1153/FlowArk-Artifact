@@ -1,0 +1,45 @@
+# FlowArk eval 配置
+# 这份配置仅包含评测普通参数；Judge 的 URL 与 API Key 请放在仓库根 .env。
+
+input_path: ""
+out_dir: "evals"
+agent_adapter: "opencode"
+opencode_binary: null
+opencode_model: ""
+opencode_provider: "anthropic"
+opencode_after_tool_delivery: "no_reply_context"
+opencode_bash_policy: "read_only_guarded"
+opencode_structured_output: true
+
+modes:
+  - "naive"
+  - "flowark"
+
+parallel: 1
+serialize_within_app: true
+repeats: 1
+classification_filter: "all"
+max_apps: null
+max_sources: null
+app_names: []
+dummy_run: false
+
+knowledge_mode: "warm"
+knowledge_allow_repeat_injection_within_session: true
+auto_knowledge_cycle: true
+runtime_injection_mode: "context_aware"
+knowledge_distillation_mode: "with_selection_rules"
+knowledge_packaging_mode: "dsl_rule"
+auto_knowledge_validate_mode: "static"
+knowledge_reuse_digest_mode: "off"
+knowledge_top_k: 3
+knowledge_recall_top_m: 8
+knowledge_repeat_summary_react_gap: 0
+knowledge_repeat_full_react_gap: 1
+
+timeout_seconds: 1800
+
+llm_judge_enabled: true
+llm_judge_model: ""
+llm_judge_timeout_seconds: 120
+llm_judge_max_retries: 2

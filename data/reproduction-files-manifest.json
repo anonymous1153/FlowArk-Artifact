@@ -1,0 +1,160 @@
+{
+  "schema_version": "flowark-reproduction-files-v1",
+  "files": [
+    {
+      "path": "README.md",
+      "size_bytes": 6743,
+      "sha256": "07bfdc9d584cc916a4f4a1ff3156bf9a104c524565bf705d32927c2d1fffe020"
+    },
+    {
+      "path": "catalog.json",
+      "size_bytes": 6127,
+      "sha256": "1ec03dc237be398eac1d0d688e27fd92babeead8eec4779b1eaac1ee2a04ca12"
+    },
+    {
+      "path": "recompute.py",
+      "size_bytes": 28123,
+      "sha256": "26937d30a7154c4ecb95ec8655e409561736c8e2f8c11ed27c853314d8c361a1"
+    },
+    {
+      "path": "cost-and-tokens/audited-execution-costs.jsonl",
+      "size_bytes": 5935203,
+      "sha256": "a61bd308e99909def5c40f241b9c7479390ccdd555cca2643bacb8b8e5c3dad3"
+    },
+    {
+      "path": "knowledge-control/pairing.json",
+      "size_bytes": 1808909,
+      "sha256": "7b7aba10361766de5b3e38124eb3d8601171f26a4379a258c2f4d8aae9c57ba5"
+    },
+    {
+      "path": "knowledge-control/sampling.json",
+      "size_bytes": 98647,
+      "sha256": "34db715c61ef1bea012faeeca622ee6f541a68df24f8895df1e7ffa13f764af0"
+    },
+    {
+      "path": "results/ablation-comparison.csv",
+      "size_bytes": 1870,
+      "sha256": "4697d726ae084c3d08b87e9e89fbb6d6816c9d15ef289969c199abb1dd9ac0d2"
+    },
+    {
+      "path": "results/audited-quality.csv",
+      "size_bytes": 1859,
+      "sha256": "c09da30048943eca5bb611447c7c1f7fb87e24ea98dc35ddf4be91369c6138be"
+    },
+    {
+      "path": "results/baseline-comparison.csv",
+      "size_bytes": 1863,
+      "sha256": "10614b706253e2cd80eae52438ca5a8b35235774cffabc84df0fdca5a591eec3"
+    },
+    {
+      "path": "results/case-metrics.csv",
+      "size_bytes": 11059415,
+      "sha256": "0dbf7b8abc9e9758a2b702c3894bfafe0a52db87af6b11d62ecf27f5fc03c4f4"
+    },
+    {
+      "path": "results/experiment-totals.csv",
+      "size_bytes": 3214,
+      "sha256": "3ffa775759a620ac771bca3f5985f5bb76e0e15b64f03849248c9d5c2b660443"
+    },
+    {
+      "path": "results/glm53-repeated-runs.csv",
+      "size_bytes": 767,
+      "sha256": "b44d9b72097ebf10ab04276bc71be3f4abe1c2af96893b82b222810925f8c913"
+    },
+    {
+      "path": "results/main49-knowledge-injection-per-app.csv",
+      "size_bytes": 4501,
+      "sha256": "df1cca76919fc041808109591304b8241a9787a77a3c276a944814d5534951fa"
+    },
+    {
+      "path": "results/main49-knowledge-injection-per-task.csv",
+      "size_bytes": 1606731,
+      "sha256": "7281ee0af22be38431c27a78ac87de9c1b95b88555287b56cdd967219da3abf6"
+    },
+    {
+      "path": "results/main49-knowledge-injection.json",
+      "size_bytes": 13899,
+      "sha256": "b551d74c3de7dacf58dd8e7861d06fcdf1b50595cb3ad20290af7e6841396fc3"
+    },
+    {
+      "path": "results/main49-per-app.csv",
+      "size_bytes": 5528,
+      "sha256": "afabe49428c068eebccc45f01be40435c2c3b85ee2158d2b875999a6a4dca0ef"
+    },
+    {
+      "path": "results/model-comparison.csv",
+      "size_bytes": 975,
+      "sha256": "c39fa87d0352369e3c5ffed8bf85aa769d3d774bec72900e52ab86485f4cae6c"
+    },
+    {
+      "path": "results/paper-metrics.json",
+      "size_bytes": 50936,
+      "sha256": "72d90e07f23c6301d60b6c57046f4073afd6fce0910802f5e9b8843eede60697"
+    },
+    {
+      "path": "source-reading/data/task-line-sets.jsonl",
+      "size_bytes": 196736768,
+      "sha256": "fc6ce1e803918bdd1c1f7d5ae303b2afebfe312c72390d172046ca12c6b6804e"
+    },
+    {
+      "path": "source-reading/reference/coverage-by-app.json",
+      "size_bytes": 116752,
+      "sha256": "60ca157ea6cc2c83d7d07b90bbcdbbeed9bdaf2e08de105381f3a06071595c60"
+    },
+    {
+      "path": "source-reading/reference/coverage-by-tool-and-mode.json",
+      "size_bytes": 27291,
+      "sha256": "ce07ca95ff52bc7e0a1527d2b8758bff3b63c7359b0a9c7dc75e2a19038ead39"
+    },
+    {
+      "path": "source-reading/reference/expected-results.json",
+      "size_bytes": 11493,
+      "sha256": "32e479ac42aafe954f4a814eb8e3a87bce9b6f0e1fdf803bd8ab734d0a5b89ff"
+    },
+    {
+      "path": "source-reading/results/recomputed.json",
+      "size_bytes": 76090,
+      "sha256": "8c6a44d1e71c61e34efa7f5be391a15aefdf65731abc1808e5013f190e35687d"
+    },
+    {
+      "path": "source-reading/scripts/reproduce_metrics.py",
+      "size_bytes": 7510,
+      "sha256": "d15527fa18e159e8e995dedce59f3b1aa8695797333931f0941663fb4f0b4350"
+    },
+    {
+      "path": "workloads/main49-excluded-executions.json",
+      "size_bytes": 2428,
+      "sha256": "a304947a0646f06fe0f36468fdb805e3ca79ae6530312c2d61780573bc1eb98d"
+    },
+    {
+      "path": "workloads/main49-paired-tasks.csv",
+      "size_bytes": 550238,
+      "sha256": "b095263bf471c111bc80904dbe1dfa1d4d84a2dc0105443f0e1ee051dc3dc3cf"
+    },
+    {
+      "path": "workloads/main49.json",
+      "size_bytes": 6727572,
+      "sha256": "8815a1718c26b50ac7077bbec6a1ed8831820f3213d25eefe7ebe02b11e05fd0"
+    },
+    {
+      "path": "workloads/source-corpus-summary.json",
+      "size_bytes": 1623,
+      "sha256": "7be8a192302e6cce0fb563314f8b85253cb6a8287cbb395e3fd04073715e5aef"
+    },
+    {
+      "path": "workloads/source-inventory.jsonl",
+      "size_bytes": 5342758,
+      "sha256": "cdca669182b3a66f3f4db39f202795c59006fe12704e443d21ff9002e400b4c8"
+    },
+    {
+      "path": "workloads/strat15-sampling-analysis.json",
+      "size_bytes": 79772,
+      "sha256": "0591e68564aa0f9ae23fb131d88e5d990bcd8023d2e5b6a3daa59bc70a19bdb8"
+    },
+    {
+      "path": "workloads/sub15.json",
+      "size_bytes": 1865324,
+      "sha256": "487790ba6279ebf8d0acad277c5df079c3a82d3a65cd410f3744fcdf3e1178d1"
+    }
+  ]
+}

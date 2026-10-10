@@ -1,0 +1,4919 @@
+{
+  "inputs": {
+    "Main49": {
+      "path": "data/benchmarks/source-first-v3.2-main50.template.json",
+      "sha256": "8815a1718c26b50ac7077bbec6a1ed8831820f3213d25eefe7ebe02b11e05fd0"
+    },
+    "Strat15": {
+      "path": "data/benchmarks/source-first-v3.2-strat15.template.json",
+      "sha256": "487790ba6279ebf8d0acad277c5df079c3a82d3a65cd410f3744fcdf3e1178d1"
+    }
+  },
+  "schema_version": "flowark-strat15-sampling-v1",
+  "frame": {
+    "name": "Main49",
+    "app_count": 49,
+    "source_occurrences": 4649,
+    "band_sizes": [
+      10,
+      10,
+      10,
+      10,
+      9
+    ],
+    "source_subtype_counts": {
+      "account": 12,
+      "bundle_value": 51,
+      "checked_widget_value": 317,
+      "clipboard": 28,
+      "compose_value_change": 248,
+      "dao_return": 891,
+      "database_cursor": 134,
+      "decode_from_string": 1,
+      "file_input_stream": 201,
+      "file_read": 46,
+      "gson_from_json": 7,
+      "http_response_body": 423,
+      "http_response_body_stream": 17,
+      "intent_extra": 420,
+      "json_array_parse": 1,
+      "json_object_parse": 15,
+      "location": 12,
+      "network_state": 114,
+      "package_info": 82,
+      "push_message": 1,
+      "sensor_event": 19,
+      "settings": 67,
+      "shared_preferences": 1012,
+      "telephony": 8,
+      "text_widget_value": 509,
+      "uri_query_parameter": 13
+    }
+  },
+  "method": {
+    "app_order": "Descending source count; ties by ascending app_name.",
+    "candidate_grid_percent": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      60,
+      70,
+      80,
+      90,
+      100
+    ],
+    "candidate_rule": "Use the same strictly increasing triple in every band.",
+    "rounding": "One-based round-half-up: floor(percent * band_size / 100 + 0.5).",
+    "validity": "Require three distinct in-range positions in every band.",
+    "distance": "Occurrence-weighted source_subtype TVD; absent subtype counts are zero.",
+    "distance_comparison": "Exact rational arithmetic, with no floating-point tolerance.",
+    "tvd_ties": "Report all exact minima; select the lexicographically smallest percentage triple.",
+    "rank_ties": "Equal exact TVD values share the rank 1 + number of strictly smaller values.",
+    "execution_order": "Retain the original Main49 case order after selecting app membership."
+  },
+  "candidate_counts": {
+    "total": 120,
+    "valid": 112,
+    "invalid": 8
+  },
+  "minimum_positions_percent": [
+    [
+      30,
+      60,
+      90
+    ]
+  ],
+  "unique_minimum": true,
+  "selected": {
+    "positions_percent": [
+      30,
+      60,
+      90
+    ],
+    "positions_by_band": [
+      [
+        3,
+        6,
+        9
+      ],
+      [
+        3,
+        6,
+        9
+      ],
+      [
+        3,
+        6,
+        9
+      ],
+      [
+        3,
+        6,
+        9
+      ],
+      [
+        3,
+        5,
+        8
+      ]
+    ],
+    "app_count": 15,
+    "source_occurrences": 1284,
+    "source_subtypes": 24,
+    "source_subtype_tvd_exact": "458279/5969316",
+    "source_subtype_tvd": 0.07677244763051579,
+    "rank": 1,
+    "app_ids": [
+      "com.duckduckgo.mobile.android_52702000",
+      "pan.alexander.tordnscrypt.stable_26603",
+      "de.westnordost.streetcomplete.expert_6302",
+      "me.knighthat.kreate_133",
+      "net.bible.android.activity_910",
+      "im.quicksy.client_4217104",
+      "ws.xsoh.etar_53",
+      "com.kunzisoft.keepass.libre_153",
+      "org.schabi.newpipe_1009",
+      "com.karin.idTech4Amm_11071",
+      "org.kde.kdeconnect_tp_13505",
+      "me.zhanghai.android.files_39",
+      "app.passwordstore.agrahn_11602",
+      "com.nononsenseapps.feeder_3922",
+      "com.tutpro.baresip_483"
+    ],
+    "global_ranks": [
+      3,
+      6,
+      9,
+      13,
+      16,
+      19,
+      23,
+      26,
+      29,
+      33,
+      36,
+      39,
+      43,
+      45,
+      48
+    ],
+    "subtype_counts": {
+      "account": 1,
+      "bundle_value": 9,
+      "checked_widget_value": 96,
+      "clipboard": 11,
+      "compose_value_change": 68,
+      "dao_return": 209,
+      "database_cursor": 35,
+      "decode_from_string": 1,
+      "file_input_stream": 43,
+      "file_read": 20,
+      "gson_from_json": 3,
+      "http_response_body": 95,
+      "http_response_body_stream": 16,
+      "intent_extra": 107,
+      "json_object_parse": 1,
+      "location": 3,
+      "network_state": 73,
+      "package_info": 19,
+      "sensor_event": 9,
+      "settings": 29,
+      "shared_preferences": 285,
+      "telephony": 4,
+      "text_widget_value": 144,
+      "uri_query_parameter": 3
+    },
+    "matches_published_cases_and_order": true
+  },
+  "app_ranking": [
+    {
+      "rank": 1,
+      "app_name": "fr.gouv.etalab.mastodon_549",
+      "source_occurrences": 529
+    },
+    {
+      "rank": 2,
+      "app_name": "com.best.deskclock_2031",
+      "source_occurrences": 301
+    },
+    {
+      "rank": 3,
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "source_occurrences": 236
+    },
+    {
+      "rank": 4,
+      "app_name": "nodomain.freeyourgadget.gadgetbridge_246",
+      "source_occurrences": 231
+    },
+    {
+      "rank": 5,
+      "app_name": "de.monocles.browser_14",
+      "source_occurrences": 190
+    },
+    {
+      "rank": 6,
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "source_occurrences": 183
+    },
+    {
+      "rank": 7,
+      "app_name": "com.forrestguice.suntimeswidget_128",
+      "source_occurrences": 152
+    },
+    {
+      "rank": 8,
+      "app_name": "com.skyd.anivu_29",
+      "source_occurrences": 139
+    },
+    {
+      "rank": 9,
+      "app_name": "de.westnordost.streetcomplete.expert_6302",
+      "source_occurrences": 137
+    },
+    {
+      "rank": 10,
+      "app_name": "de.monocles.chat_20004",
+      "source_occurrences": 125
+    },
+    {
+      "rank": 11,
+      "app_name": "io.github.gonbei774.calisthenicsmemory_28",
+      "source_occurrences": 120
+    },
+    {
+      "rank": 12,
+      "app_name": "org.totschnig.myexpenses_835",
+      "source_occurrences": 117
+    },
+    {
+      "rank": 13,
+      "app_name": "me.knighthat.kreate_133",
+      "source_occurrences": 111
+    },
+    {
+      "rank": 14,
+      "app_name": "com.amaze.filemanager_124",
+      "source_occurrences": 109
+    },
+    {
+      "rank": 15,
+      "app_name": "cash.p.terminal_229",
+      "source_occurrences": 93
+    },
+    {
+      "rank": 16,
+      "app_name": "net.bible.android.activity_910",
+      "source_occurrences": 91
+    },
+    {
+      "rank": 17,
+      "app_name": "indi.dmzz_yyhyy.lightnovelreader_10200030",
+      "source_occurrences": 82
+    },
+    {
+      "rank": 18,
+      "app_name": "eu.siacs.conversations_4217104",
+      "source_occurrences": 79
+    },
+    {
+      "rank": 19,
+      "app_name": "im.quicksy.client_4217104",
+      "source_occurrences": 79
+    },
+    {
+      "rank": 20,
+      "app_name": "de.danoeh.antennapod_3110095",
+      "source_occurrences": 72
+    },
+    {
+      "rank": 21,
+      "app_name": "org.fdroid.fdroid_1023052",
+      "source_occurrences": 72
+    },
+    {
+      "rank": 22,
+      "app_name": "app.pachli_46",
+      "source_occurrences": 70
+    },
+    {
+      "rank": 23,
+      "app_name": "ws.xsoh.etar_53",
+      "source_occurrences": 68
+    },
+    {
+      "rank": 24,
+      "app_name": "com.github.catfriend1.syncthingfork_2001500",
+      "source_occurrences": 65
+    },
+    {
+      "rank": 25,
+      "app_name": "site.leos.apps.lespas_114",
+      "source_occurrences": 63
+    },
+    {
+      "rank": 26,
+      "app_name": "com.kunzisoft.keepass.libre_153",
+      "source_occurrences": 61
+    },
+    {
+      "rank": 27,
+      "app_name": "com.machiav3lli.fdroid_1207",
+      "source_occurrences": 60
+    },
+    {
+      "rank": 28,
+      "app_name": "uk.org.ngo.squeezer_154",
+      "source_occurrences": 60
+    },
+    {
+      "rank": 29,
+      "app_name": "org.schabi.newpipe_1009",
+      "source_occurrences": 58
+    },
+    {
+      "rank": 30,
+      "app_name": "org.joinmastodon.android_165",
+      "source_occurrences": 55
+    },
+    {
+      "rank": 31,
+      "app_name": "com.fsck.k9_39034",
+      "source_occurrences": 54
+    },
+    {
+      "rank": 32,
+      "app_name": "net.thunderbird.android_21",
+      "source_occurrences": 54
+    },
+    {
+      "rank": 33,
+      "app_name": "com.karin.idTech4Amm_11071",
+      "source_occurrences": 53
+    },
+    {
+      "rank": 34,
+      "app_name": "net.thunderbird.android.beta_47",
+      "source_occurrences": 53
+    },
+    {
+      "rank": 35,
+      "app_name": "com.zorinos.zorin_connect_13304",
+      "source_occurrences": 50
+    },
+    {
+      "rank": 36,
+      "app_name": "org.kde.kdeconnect_tp_13505",
+      "source_occurrences": 50
+    },
+    {
+      "rank": 37,
+      "app_name": "com.keylesspalace.tusky_140",
+      "source_occurrences": 49
+    },
+    {
+      "rank": 38,
+      "app_name": "eu.darken.sdmse_10605000",
+      "source_occurrences": 49
+    },
+    {
+      "rank": 39,
+      "app_name": "me.zhanghai.android.files_39",
+      "source_occurrences": 47
+    },
+    {
+      "rank": 40,
+      "app_name": "it.niedermann.owncloud.notes_330000090",
+      "source_occurrences": 45
+    },
+    {
+      "rank": 41,
+      "app_name": "helium314.keyboard_3801",
+      "source_occurrences": 43
+    },
+    {
+      "rank": 42,
+      "app_name": "com.blacksquircle.ui_10028",
+      "source_occurrences": 41
+    },
+    {
+      "rank": 43,
+      "app_name": "app.passwordstore.agrahn_11602",
+      "source_occurrences": 40
+    },
+    {
+      "rank": 44,
+      "app_name": "org.quantumbadger.redreader_116",
+      "source_occurrences": 40
+    },
+    {
+      "rank": 45,
+      "app_name": "com.nononsenseapps.feeder_3922",
+      "source_occurrences": 36
+    },
+    {
+      "rank": 46,
+      "app_name": "player.phonograph.plus_1120",
+      "source_occurrences": 36
+    },
+    {
+      "rank": 47,
+      "app_name": "com.marktka.calculatorYou_33",
+      "source_occurrences": 34
+    },
+    {
+      "rank": 48,
+      "app_name": "com.tutpro.baresip_483",
+      "source_occurrences": 34
+    },
+    {
+      "rank": 49,
+      "app_name": "com.yosefario.nclientv3_421",
+      "source_occurrences": 33
+    }
+  ],
+  "candidates": [
+    {
+      "positions_percent": [
+        30,
+        60,
+        90
+      ],
+      "positions_by_band": [
+        [
+          3,
+          6,
+          9
+        ],
+        [
+          3,
+          6,
+          9
+        ],
+        [
+          3,
+          6,
+          9
+        ],
+        [
+          3,
+          6,
+          9
+        ],
+        [
+          3,
+          5,
+          8
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1284,
+      "source_subtypes": 24,
+      "source_subtype_tvd_exact": "458279/5969316",
+      "source_subtype_tvd": 0.07677244763051579,
+      "rank": 1
+    },
+    {
+      "positions_percent": [
+        30,
+        60,
+        80
+      ],
+      "positions_by_band": [
+        [
+          3,
+          6,
+          8
+        ],
+        [
+          3,
+          6,
+          8
+        ],
+        [
+          3,
+          6,
+          8
+        ],
+        [
+          3,
+          6,
+          8
+        ],
+        [
+          3,
+          5,
+          7
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1290,
+      "source_subtypes": 24,
+      "source_subtype_tvd_exact": "247111/2998605",
+      "source_subtype_tvd": 0.08240865335714441,
+      "rank": 2
+    },
+    {
+      "positions_percent": [
+        30,
+        40,
+        50
+      ],
+      "positions_by_band": [
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          4,
+          5
+        ],
+        [
+          3,
+          4,
+          5
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1438,
+      "source_subtypes": 24,
+      "source_subtype_tvd_exact": "314215/3342631",
+      "source_subtype_tvd": 0.09400229938632174,
+      "rank": 3
+    },
+    {
+      "positions_percent": [
+        30,
+        40,
+        80
+      ],
+      "positions_by_band": [
+        [
+          3,
+          4,
+          8
+        ],
+        [
+          3,
+          4,
+          8
+        ],
+        [
+          3,
+          4,
+          8
+        ],
+        [
+          3,
+          4,
+          8
+        ],
+        [
+          3,
+          4,
+          7
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1367,
+      "source_subtypes": 24,
+      "source_subtype_tvd_exact": "616327/6355183",
+      "source_subtype_tvd": 0.09698021284359554,
+      "rank": 4
+    },
+    {
+      "positions_percent": [
+        30,
+        40,
+        70
+      ],
+      "positions_by_band": [
+        [
+          3,
+          4,
+          7
+        ],
+        [
+          3,
+          4,
+          7
+        ],
+        [
+          3,
+          4,
+          7
+        ],
+        [
+          3,
+          4,
+          7
+        ],
+        [
+          3,
+          4,
+          6
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1385,
+      "source_subtypes": 24,
+      "source_subtype_tvd_exact": "653859/6438865",
+      "source_subtype_tvd": 0.10154879780830939,
+      "rank": 5
+    },
+    {
+      "positions_percent": [
+        10,
+        20,
+        100
+      ],
+      "positions_by_band": [
+        [
+          1,
+          2,
+          10
+        ],
+        [
+          1,
+          2,
+          10
+        ],
+        [
+          1,
+          2,
+          10
+        ],
+        [
+          1,
+          2,
+          10
+        ],
+        [
+          1,
+          2,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1731,
+      "source_subtypes": 23,
+      "source_subtype_tvd_exact": "824722/8047419",
+      "source_subtype_tvd": 0.10248279603684113,
+      "rank": 6
+    },
+    {
+      "positions_percent": [
+        20,
+        30,
+        40
+      ],
+      "positions_by_band": [
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          3,
+          4
+        ],
+        [
+          2,
+          3,
+          4
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1589,
+      "source_subtypes": 24,
+      "source_subtype_tvd_exact": "792441/7387261",
+      "source_subtype_tvd": 0.10727128769377446,
+      "rank": 7
+    },
+    {
+      "positions_percent": [
+        20,
+        40,
+        90
+      ],
+      "positions_by_band": [
+        [
+          2,
+          4,
+          9
+        ],
+        [
+          2,
+          4,
+          9
+        ],
+        [
+          2,
+          4,
+          9
+        ],
+        [
+          2,
+          4,
+          9
+        ],
+        [
+          2,
+          4,
+          8
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1436,
+      "source_subtypes": 21,
+      "source_subtype_tvd_exact": "731027/6675964",
+      "source_subtype_tvd": 0.1095013394320281,
+      "rank": 8
+    },
+    {
+      "positions_percent": [
+        40,
+        70,
+        80
+      ],
+      "positions_by_band": [
+        [
+          4,
+          7,
+          8
+        ],
+        [
+          4,
+          7,
+          8
+        ],
+        [
+          4,
+          7,
+          8
+        ],
+        [
+          4,
+          7,
+          8
+        ],
+        [
+          4,
+          6,
+          7
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1238,
+      "source_subtypes": 21,
+      "source_subtype_tvd_exact": "633673/5755462",
+      "source_subtype_tvd": 0.11009941512948918,
+      "rank": 9
+    },
+    {
+      "positions_percent": [
+        20,
+        40,
+        100
+      ],
+      "positions_by_band": [
+        [
+          2,
+          4,
+          10
+        ],
+        [
+          2,
+          4,
+          10
+        ],
+        [
+          2,
+          4,
+          10
+        ],
+        [
+          2,
+          4,
+          10
+        ],
+        [
+          2,
+          4,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1411,
+      "source_subtypes": 23,
+      "source_subtype_tvd_exact": "730096/6559739",
+      "source_subtype_tvd": 0.11129955018027395,
+      "rank": 10
+    },
+    {
+      "positions_percent": [
+        30,
+        40,
+        90
+      ],
+      "positions_by_band": [
+        [
+          3,
+          4,
+          9
+        ],
+        [
+          3,
+          4,
+          9
+        ],
+        [
+          3,
+          4,
+          9
+        ],
+        [
+          3,
+          4,
+          9
+        ],
+        [
+          3,
+          4,
+          8
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1361,
+      "source_subtypes": 24,
+      "source_subtype_tvd_exact": "709977/6327289",
+      "source_subtype_tvd": 0.11220872003791829,
+      "rank": 11
+    },
+    {
+      "positions_percent": [
+        30,
+        50,
+        90
+      ],
+      "positions_by_band": [
+        [
+          3,
+          5,
+          9
+        ],
+        [
+          3,
+          5,
+          9
+        ],
+        [
+          3,
+          5,
+          9
+        ],
+        [
+          3,
+          5,
+          9
+        ],
+        [
+          3,
+          5,
+          8
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1295,
+      "source_subtypes": 24,
+      "source_subtype_tvd_exact": "19337/172013",
+      "source_subtype_tvd": 0.11241592205240301,
+      "rank": 12
+    },
+    {
+      "positions_percent": [
+        10,
+        60,
+        70
+      ],
+      "positions_by_band": [
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          1,
+          6,
+          7
+        ],
+        [
+          1,
+          5,
+          6
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1618,
+      "source_subtypes": 21,
+      "source_subtype_tvd_exact": "871695/7522082",
+      "source_subtype_tvd": 0.11588480423372147,
+      "rank": 13
+    },
+    {
+      "positions_percent": [
+        10,
+        20,
+        60
+      ],
+      "positions_by_band": [
+        [
+          1,
+          2,
+          6
+        ],
+        [
+          1,
+          2,
+          6
+        ],
+        [
+          1,
+          2,
+          6
+        ],
+        [
+          1,
+          2,
+          6
+        ],
+        [
+          1,
+          2,
+          5
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1822,
+      "source_subtypes": 20,
+      "source_subtype_tvd_exact": "993181/8470478",
+      "source_subtype_tvd": 0.11725206062751123,
+      "rank": 14
+    },
+    {
+      "positions_percent": [
+        10,
+        50,
+        70
+      ],
+      "positions_by_band": [
+        [
+          1,
+          5,
+          7
+        ],
+        [
+          1,
+          5,
+          7
+        ],
+        [
+          1,
+          5,
+          7
+        ],
+        [
+          1,
+          5,
+          7
+        ],
+        [
+          1,
+          5,
+          6
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1629,
+      "source_subtypes": 23,
+      "source_subtype_tvd_exact": "888326/7573221",
+      "source_subtype_tvd": 0.11729830675745498,
+      "rank": 15
+    },
+    {
+      "positions_percent": [
+        30,
+        80,
+        100
+      ],
+      "positions_by_band": [
+        [
+          3,
+          8,
+          10
+        ],
+        [
+          3,
+          8,
+          10
+        ],
+        [
+          3,
+          8,
+          10
+        ],
+        [
+          3,
+          8,
+          10
+        ],
+        [
+          3,
+          7,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1199,
+      "source_subtypes": 26,
+      "source_subtype_tvd_exact": "655364/5574151",
+      "source_subtype_tvd": 0.11757198540190246,
+      "rank": 16
+    },
+    {
+      "positions_percent": [
+        60,
+        70,
+        90
+      ],
+      "positions_by_band": [
+        [
+          6,
+          7,
+          9
+        ],
+        [
+          6,
+          7,
+          9
+        ],
+        [
+          6,
+          7,
+          9
+        ],
+        [
+          6,
+          7,
+          9
+        ],
+        [
+          5,
+          6,
+          8
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1155,
+      "source_subtypes": 21,
+      "source_subtype_tvd_exact": "211298/1789865",
+      "source_subtype_tvd": 0.1180524788182349,
+      "rank": 17
+    },
+    {
+      "positions_percent": [
+        20,
+        40,
+        80
+      ],
+      "positions_by_band": [
+        [
+          2,
+          4,
+          8
+        ],
+        [
+          2,
+          4,
+          8
+        ],
+        [
+          2,
+          4,
+          8
+        ],
+        [
+          2,
+          4,
+          8
+        ],
+        [
+          2,
+          4,
+          7
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1442,
+      "source_subtypes": 20,
+      "source_subtype_tvd_exact": "801341/6703858",
+      "source_subtype_tvd": 0.11953430397839572,
+      "rank": 18
+    },
+    {
+      "positions_percent": [
+        10,
+        70,
+        90
+      ],
+      "positions_by_band": [
+        [
+          1,
+          7,
+          9
+        ],
+        [
+          1,
+          7,
+          9
+        ],
+        [
+          1,
+          7,
+          9
+        ],
+        [
+          1,
+          7,
+          9
+        ],
+        [
+          1,
+          6,
+          8
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1552,
+      "source_subtypes": 21,
+      "source_subtype_tvd_exact": "435397/3607624",
+      "source_subtype_tvd": 0.12068802070282268,
+      "rank": 19
+    },
+    {
+      "positions_percent": [
+        10,
+        20,
+        40
+      ],
+      "positions_by_band": [
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          2,
+          4
+        ],
+        [
+          1,
+          2,
+          4
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1899,
+      "source_subtypes": 21,
+      "source_subtype_tvd_exact": "1083316/8828451",
+      "source_subtype_tvd": 0.12270736961670853,
+      "rank": 20
+    },
+    {
+      "positions_percent": [
+        10,
+        20,
+        90
+      ],
+      "positions_by_band": [
+        [
+          1,
+          2,
+          9
+        ],
+        [
+          1,
+          2,
+          9
+        ],
+        [
+          1,
+          2,
+          9
+        ],
+        [
+          1,
+          2,
+          9
+        ],
+        [
+          1,
+          2,
+          8
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1756,
+      "source_subtypes": 22,
+      "source_subtype_tvd_exact": "502785/4081822",
+      "source_subtype_tvd": 0.12317661083702328,
+      "rank": 21
+    },
+    {
+      "positions_percent": [
+        10,
+        30,
+        70
+      ],
+      "positions_by_band": [
+        [
+          1,
+          3,
+          7
+        ],
+        [
+          1,
+          3,
+          7
+        ],
+        [
+          1,
+          3,
+          7
+        ],
+        [
+          1,
+          3,
+          7
+        ],
+        [
+          1,
+          3,
+          6
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1705,
+      "source_subtypes": 24,
+      "source_subtype_tvd_exact": "1002937/7926545",
+      "source_subtype_tvd": 0.12652889752092494,
+      "rank": 22
+    },
+    {
+      "positions_percent": [
+        30,
+        80,
+        90
+      ],
+      "positions_by_band": [
+        [
+          3,
+          8,
+          9
+        ],
+        [
+          3,
+          8,
+          9
+        ],
+        [
+          3,
+          8,
+          9
+        ],
+        [
+          3,
+          8,
+          9
+        ],
+        [
+          3,
+          7,
+          8
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1224,
+      "source_subtypes": 24,
+      "source_subtype_tvd_exact": "120515/948396",
+      "source_subtype_tvd": 0.12707244653077407,
+      "rank": 23
+    },
+    {
+      "positions_percent": [
+        20,
+        60,
+        90
+      ],
+      "positions_by_band": [
+        [
+          2,
+          6,
+          9
+        ],
+        [
+          2,
+          6,
+          9
+        ],
+        [
+          2,
+          6,
+          9
+        ],
+        [
+          2,
+          6,
+          9
+        ],
+        [
+          2,
+          5,
+          8
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1359,
+      "source_subtypes": 21,
+      "source_subtype_tvd_exact": "810023/6317991",
+      "source_subtype_tvd": 0.12820895123149115,
+      "rank": 24
+    },
+    {
+      "positions_percent": [
+        30,
+        60,
+        100
+      ],
+      "positions_by_band": [
+        [
+          3,
+          6,
+          10
+        ],
+        [
+          3,
+          6,
+          10
+        ],
+        [
+          3,
+          6,
+          10
+        ],
+        [
+          3,
+          6,
+          10
+        ],
+        [
+          3,
+          5,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1259,
+      "source_subtypes": 26,
+      "source_subtype_tvd_exact": "756381/5853091",
+      "source_subtype_tvd": 0.1292276166558832,
+      "rank": 25
+    },
+    {
+      "positions_percent": [
+        10,
+        30,
+        50
+      ],
+      "positions_by_band": [
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          1,
+          3,
+          5
+        ],
+        [
+          1,
+          3,
+          5
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1758,
+      "source_subtypes": 23,
+      "source_subtype_tvd_exact": "352207/2724314",
+      "source_subtype_tvd": 0.12928282129005686,
+      "rank": 26
+    },
+    {
+      "positions_percent": [
+        20,
+        60,
+        100
+      ],
+      "positions_by_band": [
+        [
+          2,
+          6,
+          10
+        ],
+        [
+          2,
+          6,
+          10
+        ],
+        [
+          2,
+          6,
+          10
+        ],
+        [
+          2,
+          6,
+          10
+        ],
+        [
+          2,
+          5,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1334,
+      "source_subtypes": 23,
+      "source_subtype_tvd_exact": "403126/3100883",
+      "source_subtype_tvd": 0.13000361509931205,
+      "rank": 27
+    },
+    {
+      "positions_percent": [
+        40,
+        50,
+        70
+      ],
+      "positions_by_band": [
+        [
+          4,
+          5,
+          7
+        ],
+        [
+          4,
+          5,
+          7
+        ],
+        [
+          4,
+          5,
+          7
+        ],
+        [
+          4,
+          5,
+          7
+        ],
+        [
+          4,
+          5,
+          6
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1309,
+      "source_subtypes": 23,
+      "source_subtype_tvd_exact": "803423/6085541",
+      "source_subtype_tvd": 0.13202162305701334,
+      "rank": 28
+    },
+    {
+      "positions_percent": [
+        30,
+        50,
+        100
+      ],
+      "positions_by_band": [
+        [
+          3,
+          5,
+          10
+        ],
+        [
+          3,
+          5,
+          10
+        ],
+        [
+          3,
+          5,
+          10
+        ],
+        [
+          3,
+          5,
+          10
+        ],
+        [
+          3,
+          5,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1270,
+      "source_subtypes": 26,
+      "source_subtype_tvd_exact": "78061/590423",
+      "source_subtype_tvd": 0.13221199038655337,
+      "rank": 29
+    },
+    {
+      "positions_percent": [
+        10,
+        20,
+        50
+      ],
+      "positions_by_band": [
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          1,
+          2,
+          5
+        ],
+        [
+          1,
+          2,
+          5
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1833,
+      "source_subtypes": 21,
+      "source_subtype_tvd_exact": "1129235/8521617",
+      "source_subtype_tvd": 0.13251416955256262,
+      "rank": 30
+    },
+    {
+      "positions_percent": [
+        50,
+        80,
+        100
+      ],
+      "positions_by_band": [
+        [
+          5,
+          8,
+          10
+        ],
+        [
+          5,
+          8,
+          10
+        ],
+        [
+          5,
+          8,
+          10
+        ],
+        [
+          5,
+          8,
+          10
+        ],
+        [
+          5,
+          7,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1123,
+      "source_subtypes": 24,
+      "source_subtype_tvd_exact": "697434/5220827",
+      "source_subtype_tvd": 0.13358688192502835,
+      "rank": 31
+    },
+    {
+      "positions_percent": [
+        60,
+        70,
+        80
+      ],
+      "positions_by_band": [
+        [
+          6,
+          7,
+          8
+        ],
+        [
+          6,
+          7,
+          8
+        ],
+        [
+          6,
+          7,
+          8
+        ],
+        [
+          6,
+          7,
+          8
+        ],
+        [
+          5,
+          6,
+          7
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1161,
+      "source_subtypes": 21,
+      "source_subtype_tvd_exact": "721418/5397489",
+      "source_subtype_tvd": 0.13365807693169918,
+      "rank": 32
+    },
+    {
+      "positions_percent": [
+        20,
+        40,
+        50
+      ],
+      "positions_by_band": [
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          2,
+          4,
+          5
+        ],
+        [
+          2,
+          4,
+          5
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1513,
+      "source_subtypes": 22,
+      "source_subtype_tvd_exact": "943325/7033937",
+      "source_subtype_tvd": 0.13411052729076192,
+      "rank": 33
+    },
+    {
+      "positions_percent": [
+        10,
+        70,
+        80
+      ],
+      "positions_by_band": [
+        [
+          1,
+          7,
+          8
+        ],
+        [
+          1,
+          7,
+          8
+        ],
+        [
+          1,
+          7,
+          8
+        ],
+        [
+          1,
+          7,
+          8
+        ],
+        [
+          1,
+          6,
+          7
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1558,
+      "source_subtypes": 21,
+      "source_subtype_tvd_exact": "971763/7243142",
+      "source_subtype_tvd": 0.1341631849824289,
+      "rank": 34
+    },
+    {
+      "positions_percent": [
+        30,
+        70,
+        90
+      ],
+      "positions_by_band": [
+        [
+          3,
+          7,
+          9
+        ],
+        [
+          3,
+          7,
+          9
+        ],
+        [
+          3,
+          7,
+          9
+        ],
+        [
+          3,
+          7,
+          9
+        ],
+        [
+          3,
+          6,
+          8
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1242,
+      "source_subtypes": 24,
+      "source_subtype_tvd_exact": "261691/1924686",
+      "source_subtype_tvd": 0.1359655549009033,
+      "rank": 35
+    },
+    {
+      "positions_percent": [
+        10,
+        30,
+        80
+      ],
+      "positions_by_band": [
+        [
+          1,
+          3,
+          8
+        ],
+        [
+          1,
+          3,
+          8
+        ],
+        [
+          1,
+          3,
+          8
+        ],
+        [
+          1,
+          3,
+          8
+        ],
+        [
+          1,
+          3,
+          7
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1687,
+      "source_subtypes": 24,
+      "source_subtype_tvd_exact": "1067623/7842863",
+      "source_subtype_tvd": 0.13612669251012036,
+      "rank": 36
+    },
+    {
+      "positions_percent": [
+        10,
+        20,
+        30
+      ],
+      "positions_by_band": [
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1909,
+      "source_subtypes": 23,
+      "source_subtype_tvd_exact": "1223894/8874941",
+      "source_subtype_tvd": 0.13790446606912654,
+      "rank": 37
+    },
+    {
+      "positions_percent": [
+        30,
+        60,
+        70
+      ],
+      "positions_by_band": [
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          3,
+          6,
+          7
+        ],
+        [
+          3,
+          5,
+          6
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1308,
+      "source_subtypes": 24,
+      "source_subtype_tvd_exact": "839567/6080892",
+      "source_subtype_tvd": 0.13806642183416512,
+      "rank": 38
+    },
+    {
+      "positions_percent": [
+        10,
+        50,
+        80
+      ],
+      "positions_by_band": [
+        [
+          1,
+          5,
+          8
+        ],
+        [
+          1,
+          5,
+          8
+        ],
+        [
+          1,
+          5,
+          8
+        ],
+        [
+          1,
+          5,
+          8
+        ],
+        [
+          1,
+          5,
+          7
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1611,
+      "source_subtypes": 22,
+      "source_subtype_tvd_exact": "1036859/7489539",
+      "source_subtype_tvd": 0.13844096412342602,
+      "rank": 39
+    },
+    {
+      "positions_percent": [
+        20,
+        90,
+        100
+      ],
+      "positions_by_band": [
+        [
+          2,
+          9,
+          10
+        ],
+        [
+          2,
+          9,
+          10
+        ],
+        [
+          2,
+          9,
+          10
+        ],
+        [
+          2,
+          9,
+          10
+        ],
+        [
+          2,
+          8,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1268,
+      "source_subtypes": 24,
+      "source_subtype_tvd_exact": "816725/5894932",
+      "source_subtype_tvd": 0.1385469756054862,
+      "rank": 40
+    },
+    {
+      "positions_percent": [
+        60,
+        80,
+        100
+      ],
+      "positions_by_band": [
+        [
+          6,
+          8,
+          10
+        ],
+        [
+          6,
+          8,
+          10
+        ],
+        [
+          6,
+          8,
+          10
+        ],
+        [
+          6,
+          8,
+          10
+        ],
+        [
+          5,
+          7,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1112,
+      "source_subtypes": 22,
+      "source_subtype_tvd_exact": "179351/1292422",
+      "source_subtype_tvd": 0.1387712372584187,
+      "rank": 41
+    },
+    {
+      "positions_percent": [
+        10,
+        70,
+        100
+      ],
+      "positions_by_band": [
+        [
+          1,
+          7,
+          10
+        ],
+        [
+          1,
+          7,
+          10
+        ],
+        [
+          1,
+          7,
+          10
+        ],
+        [
+          1,
+          7,
+          10
+        ],
+        [
+          1,
+          6,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1527,
+      "source_subtypes": 23,
+      "source_subtype_tvd_exact": "999088/7099023",
+      "source_subtype_tvd": 0.14073598578283236,
+      "rank": 42
+    },
+    {
+      "positions_percent": [
+        10,
+        50,
+        90
+      ],
+      "positions_by_band": [
+        [
+          1,
+          5,
+          9
+        ],
+        [
+          1,
+          5,
+          9
+        ],
+        [
+          1,
+          5,
+          9
+        ],
+        [
+          1,
+          5,
+          9
+        ],
+        [
+          1,
+          5,
+          8
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1605,
+      "source_subtypes": 23,
+      "source_subtype_tvd_exact": "1061716/7461645",
+      "source_subtype_tvd": 0.14228980338785885,
+      "rank": 43
+    },
+    {
+      "positions_percent": [
+        10,
+        30,
+        100
+      ],
+      "positions_by_band": [
+        [
+          1,
+          3,
+          10
+        ],
+        [
+          1,
+          3,
+          10
+        ],
+        [
+          1,
+          3,
+          10
+        ],
+        [
+          1,
+          3,
+          10
+        ],
+        [
+          1,
+          3,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1656,
+      "source_subtypes": 26,
+      "source_subtype_tvd_exact": "547933/3849372",
+      "source_subtype_tvd": 0.14234347836478262,
+      "rank": 44
+    },
+    {
+      "positions_percent": [
+        40,
+        50,
+        80
+      ],
+      "positions_by_band": [
+        [
+          4,
+          5,
+          8
+        ],
+        [
+          4,
+          5,
+          8
+        ],
+        [
+          4,
+          5,
+          8
+        ],
+        [
+          4,
+          5,
+          8
+        ],
+        [
+          4,
+          5,
+          7
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1291,
+      "source_subtypes": 22,
+      "source_subtype_tvd_exact": "856312/6001859",
+      "source_subtype_tvd": 0.1426744613627211,
+      "rank": 45
+    },
+    {
+      "positions_percent": [
+        10,
+        20,
+        80
+      ],
+      "positions_by_band": [
+        [
+          1,
+          2,
+          8
+        ],
+        [
+          1,
+          2,
+          8
+        ],
+        [
+          1,
+          2,
+          8
+        ],
+        [
+          1,
+          2,
+          8
+        ],
+        [
+          1,
+          2,
+          7
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1762,
+      "source_subtypes": 21,
+      "source_subtype_tvd_exact": "1331/9298",
+      "source_subtype_tvd": 0.14314906431490643,
+      "rank": 46
+    },
+    {
+      "positions_percent": [
+        30,
+        40,
+        100
+      ],
+      "positions_by_band": [
+        [
+          3,
+          4,
+          10
+        ],
+        [
+          3,
+          4,
+          10
+        ],
+        [
+          3,
+          4,
+          10
+        ],
+        [
+          3,
+          4,
+          10
+        ],
+        [
+          3,
+          4,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1336,
+      "source_subtypes": 26,
+      "source_subtype_tvd_exact": "111445/776383",
+      "source_subtype_tvd": 0.14354384369570172,
+      "rank": 47
+    },
+    {
+      "positions_percent": [
+        30,
+        90,
+        100
+      ],
+      "positions_by_band": [
+        [
+          3,
+          9,
+          10
+        ],
+        [
+          3,
+          9,
+          10
+        ],
+        [
+          3,
+          9,
+          10
+        ],
+        [
+          3,
+          9,
+          10
+        ],
+        [
+          3,
+          8,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1193,
+      "source_subtypes": 26,
+      "source_subtype_tvd_exact": "806055/5546257",
+      "source_subtype_tvd": 0.1453331499063242,
+      "rank": 48
+    },
+    {
+      "positions_percent": [
+        20,
+        30,
+        100
+      ],
+      "positions_by_band": [
+        [
+          2,
+          3,
+          10
+        ],
+        [
+          2,
+          3,
+          10
+        ],
+        [
+          2,
+          3,
+          10
+        ],
+        [
+          2,
+          3,
+          10
+        ],
+        [
+          2,
+          3,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1421,
+      "source_subtypes": 26,
+      "source_subtype_tvd_exact": "963486/6606229",
+      "source_subtype_tvd": 0.1458450804536143,
+      "rank": 49
+    },
+    {
+      "positions_percent": [
+        20,
+        60,
+        80
+      ],
+      "positions_by_band": [
+        [
+          2,
+          6,
+          8
+        ],
+        [
+          2,
+          6,
+          8
+        ],
+        [
+          2,
+          6,
+          8
+        ],
+        [
+          2,
+          6,
+          8
+        ],
+        [
+          2,
+          5,
+          7
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1365,
+      "source_subtypes": 20,
+      "source_subtype_tvd_exact": "934331/6345885",
+      "source_subtype_tvd": 0.14723415252561306,
+      "rank": 50
+    },
+    {
+      "positions_percent": [
+        40,
+        70,
+        90
+      ],
+      "positions_by_band": [
+        [
+          4,
+          7,
+          9
+        ],
+        [
+          4,
+          7,
+          9
+        ],
+        [
+          4,
+          7,
+          9
+        ],
+        [
+          4,
+          7,
+          9
+        ],
+        [
+          4,
+          6,
+          8
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1232,
+      "source_subtypes": 21,
+      "source_subtype_tvd_exact": "844223/5727568",
+      "source_subtype_tvd": 0.14739641676886245,
+      "rank": 51
+    },
+    {
+      "positions_percent": [
+        10,
+        20,
+        70
+      ],
+      "positions_by_band": [
+        [
+          1,
+          2,
+          7
+        ],
+        [
+          1,
+          2,
+          7
+        ],
+        [
+          1,
+          2,
+          7
+        ],
+        [
+          1,
+          2,
+          7
+        ],
+        [
+          1,
+          2,
+          6
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1780,
+      "source_subtypes": 21,
+      "source_subtype_tvd_exact": "305694/2068805",
+      "source_subtype_tvd": 0.14776356398983956,
+      "rank": 52
+    },
+    {
+      "positions_percent": [
+        20,
+        30,
+        90
+      ],
+      "positions_by_band": [
+        [
+          2,
+          3,
+          9
+        ],
+        [
+          2,
+          3,
+          9
+        ],
+        [
+          2,
+          3,
+          9
+        ],
+        [
+          2,
+          3,
+          9
+        ],
+        [
+          2,
+          3,
+          8
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1446,
+      "source_subtypes": 24,
+      "source_subtype_tvd_exact": "497803/3361227",
+      "source_subtype_tvd": 0.1481015712416924,
+      "rank": 53
+    },
+    {
+      "positions_percent": [
+        60,
+        80,
+        90
+      ],
+      "positions_by_band": [
+        [
+          6,
+          8,
+          9
+        ],
+        [
+          6,
+          8,
+          9
+        ],
+        [
+          6,
+          8,
+          9
+        ],
+        [
+          6,
+          8,
+          9
+        ],
+        [
+          5,
+          7,
+          8
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1137,
+      "source_subtypes": 20,
+      "source_subtype_tvd_exact": "261923/1761971",
+      "source_subtype_tvd": 0.14865341143526198,
+      "rank": 54
+    },
+    {
+      "positions_percent": [
+        30,
+        70,
+        80
+      ],
+      "positions_by_band": [
+        [
+          3,
+          7,
+          8
+        ],
+        [
+          3,
+          7,
+          8
+        ],
+        [
+          3,
+          7,
+          8
+        ],
+        [
+          3,
+          7,
+          8
+        ],
+        [
+          3,
+          6,
+          7
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1248,
+      "source_subtypes": 24,
+      "source_subtype_tvd_exact": "431281/2900976",
+      "source_subtype_tvd": 0.14866755188598596,
+      "rank": 55
+    },
+    {
+      "positions_percent": [
+        10,
+        50,
+        100
+      ],
+      "positions_by_band": [
+        [
+          1,
+          5,
+          10
+        ],
+        [
+          1,
+          5,
+          10
+        ],
+        [
+          1,
+          5,
+          10
+        ],
+        [
+          1,
+          5,
+          10
+        ],
+        [
+          1,
+          5,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1580,
+      "source_subtypes": 24,
+      "source_subtype_tvd_exact": "1094787/7345420",
+      "source_subtype_tvd": 0.14904348560055108,
+      "rank": 56
+    },
+    {
+      "positions_percent": [
+        20,
+        30,
+        60
+      ],
+      "positions_by_band": [
+        [
+          2,
+          3,
+          6
+        ],
+        [
+          2,
+          3,
+          6
+        ],
+        [
+          2,
+          3,
+          6
+        ],
+        [
+          2,
+          3,
+          6
+        ],
+        [
+          2,
+          3,
+          5
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1512,
+      "source_subtypes": 23,
+      "source_subtype_tvd_exact": "526487/3514644",
+      "source_subtype_tvd": 0.1497981018845721,
+      "rank": 57
+    },
+    {
+      "positions_percent": [
+        30,
+        50,
+        80
+      ],
+      "positions_by_band": [
+        [
+          3,
+          5,
+          8
+        ],
+        [
+          3,
+          5,
+          8
+        ],
+        [
+          3,
+          5,
+          8
+        ],
+        [
+          3,
+          5,
+          8
+        ],
+        [
+          3,
+          5,
+          7
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1301,
+      "source_subtypes": 24,
+      "source_subtype_tvd_exact": "909159/6048349",
+      "source_subtype_tvd": 0.15031523478555883,
+      "rank": 58
+    },
+    {
+      "positions_percent": [
+        10,
+        30,
+        90
+      ],
+      "positions_by_band": [
+        [
+          1,
+          3,
+          9
+        ],
+        [
+          1,
+          3,
+          9
+        ],
+        [
+          1,
+          3,
+          9
+        ],
+        [
+          1,
+          3,
+          9
+        ],
+        [
+          1,
+          3,
+          8
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1681,
+      "source_subtypes": 24,
+      "source_subtype_tvd_exact": "1181965/7814969",
+      "source_subtype_tvd": 0.1512437221440034,
+      "rank": 59
+    },
+    {
+      "positions_percent": [
+        30,
+        40,
+        60
+      ],
+      "positions_by_band": [
+        [
+          3,
+          4,
+          6
+        ],
+        [
+          3,
+          4,
+          6
+        ],
+        [
+          3,
+          4,
+          6
+        ],
+        [
+          3,
+          4,
+          6
+        ],
+        [
+          3,
+          4,
+          5
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1427,
+      "source_subtypes": 24,
+      "source_subtype_tvd_exact": "1022816/6634123",
+      "source_subtype_tvd": 0.15417501303488043,
+      "rank": 60
+    },
+    {
+      "positions_percent": [
+        20,
+        40,
+        60
+      ],
+      "positions_by_band": [
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          2,
+          4,
+          6
+        ],
+        [
+          2,
+          4,
+          5
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1502,
+      "source_subtypes": 20,
+      "source_subtype_tvd_exact": "543337/3491399",
+      "source_subtype_tvd": 0.1556215717539015,
+      "rank": 61
+    },
+    {
+      "positions_percent": [
+        10,
+        30,
+        60
+      ],
+      "positions_by_band": [
+        [
+          1,
+          3,
+          6
+        ],
+        [
+          1,
+          3,
+          6
+        ],
+        [
+          1,
+          3,
+          6
+        ],
+        [
+          1,
+          3,
+          6
+        ],
+        [
+          1,
+          3,
+          5
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1747,
+      "source_subtypes": 23,
+      "source_subtype_tvd_exact": "1269089/8121803",
+      "source_subtype_tvd": 0.15625705277510424,
+      "rank": 62
+    },
+    {
+      "positions_percent": [
+        20,
+        80,
+        100
+      ],
+      "positions_by_band": [
+        [
+          2,
+          8,
+          10
+        ],
+        [
+          2,
+          8,
+          10
+        ],
+        [
+          2,
+          8,
+          10
+        ],
+        [
+          2,
+          8,
+          10
+        ],
+        [
+          2,
+          7,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1274,
+      "source_subtypes": 23,
+      "source_subtype_tvd_exact": "464783/2961413",
+      "source_subtype_tvd": 0.15694636310436944,
+      "rank": 63
+    },
+    {
+      "positions_percent": [
+        30,
+        70,
+        100
+      ],
+      "positions_by_band": [
+        [
+          3,
+          7,
+          10
+        ],
+        [
+          3,
+          7,
+          10
+        ],
+        [
+          3,
+          7,
+          10
+        ],
+        [
+          3,
+          7,
+          10
+        ],
+        [
+          3,
+          6,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1217,
+      "source_subtypes": 26,
+      "source_subtype_tvd_exact": "912022/5657833",
+      "source_subtype_tvd": 0.16119634496104782,
+      "rank": 64
+    },
+    {
+      "positions_percent": [
+        10,
+        40,
+        70
+      ],
+      "positions_by_band": [
+        [
+          1,
+          4,
+          7
+        ],
+        [
+          1,
+          4,
+          7
+        ],
+        [
+          1,
+          4,
+          7
+        ],
+        [
+          1,
+          4,
+          7
+        ],
+        [
+          1,
+          4,
+          6
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1695,
+      "source_subtypes": 20,
+      "source_subtype_tvd_exact": "1272751/7880055",
+      "source_subtype_tvd": 0.16151549703650545,
+      "rank": 65
+    },
+    {
+      "positions_percent": [
+        50,
+        90,
+        100
+      ],
+      "positions_by_band": [
+        [
+          5,
+          9,
+          10
+        ],
+        [
+          5,
+          9,
+          10
+        ],
+        [
+          5,
+          9,
+          10
+        ],
+        [
+          5,
+          9,
+          10
+        ],
+        [
+          5,
+          8,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1117,
+      "source_subtypes": 25,
+      "source_subtype_tvd_exact": "843788/5192933",
+      "source_subtype_tvd": 0.16248775017894512,
+      "rank": 66
+    },
+    {
+      "positions_percent": [
+        10,
+        60,
+        80
+      ],
+      "positions_by_band": [
+        [
+          1,
+          6,
+          8
+        ],
+        [
+          1,
+          6,
+          8
+        ],
+        [
+          1,
+          6,
+          8
+        ],
+        [
+          1,
+          6,
+          8
+        ],
+        [
+          1,
+          5,
+          7
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1600,
+      "source_subtypes": 20,
+      "source_subtype_tvd_exact": "1208663/7438400",
+      "source_subtype_tvd": 0.16248964831146484,
+      "rank": 67
+    },
+    {
+      "positions_percent": [
+        40,
+        50,
+        90
+      ],
+      "positions_by_band": [
+        [
+          4,
+          5,
+          9
+        ],
+        [
+          4,
+          5,
+          9
+        ],
+        [
+          4,
+          5,
+          9
+        ],
+        [
+          4,
+          5,
+          9
+        ],
+        [
+          4,
+          5,
+          8
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1285,
+      "source_subtypes": 23,
+      "source_subtype_tvd_exact": "195766/1194793",
+      "source_subtype_tvd": 0.16384930276625323,
+      "rank": 68
+    },
+    {
+      "positions_percent": [
+        60,
+        70,
+        100
+      ],
+      "positions_by_band": [
+        [
+          6,
+          7,
+          10
+        ],
+        [
+          6,
+          7,
+          10
+        ],
+        [
+          6,
+          7,
+          10
+        ],
+        [
+          6,
+          7,
+          10
+        ],
+        [
+          5,
+          6,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1130,
+      "source_subtypes": 23,
+      "source_subtype_tvd_exact": "870531/5253370",
+      "source_subtype_tvd": 0.1657090591372776,
+      "rank": 69
+    },
+    {
+      "positions_percent": [
+        20,
+        30,
+        80
+      ],
+      "positions_by_band": [
+        [
+          2,
+          3,
+          8
+        ],
+        [
+          2,
+          3,
+          8
+        ],
+        [
+          2,
+          3,
+          8
+        ],
+        [
+          2,
+          3,
+          8
+        ],
+        [
+          2,
+          3,
+          7
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1452,
+      "source_subtypes": 24,
+      "source_subtype_tvd_exact": "377547/2250116",
+      "source_subtype_tvd": 0.16779001615916692,
+      "rank": 70
+    },
+    {
+      "positions_percent": [
+        10,
+        40,
+        50
+      ],
+      "positions_by_band": [
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          4,
+          5
+        ],
+        [
+          1,
+          4,
+          5
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1748,
+      "source_subtypes": 22,
+      "source_subtype_tvd_exact": "689101/4063226",
+      "source_subtype_tvd": 0.16959455368714416,
+      "rank": 71
+    },
+    {
+      "positions_percent": [
+        70,
+        80,
+        100
+      ],
+      "positions_by_band": [
+        [
+          7,
+          8,
+          10
+        ],
+        [
+          7,
+          8,
+          10
+        ],
+        [
+          7,
+          8,
+          10
+        ],
+        [
+          7,
+          8,
+          10
+        ],
+        [
+          6,
+          7,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1070,
+      "source_subtypes": 23,
+      "source_subtype_tvd_exact": "847799/4974430",
+      "source_subtype_tvd": 0.17043138610855918,
+      "rank": 72
+    },
+    {
+      "positions_percent": [
+        20,
+        80,
+        90
+      ],
+      "positions_by_band": [
+        [
+          2,
+          8,
+          9
+        ],
+        [
+          2,
+          8,
+          9
+        ],
+        [
+          2,
+          8,
+          9
+        ],
+        [
+          2,
+          8,
+          9
+        ],
+        [
+          2,
+          7,
+          8
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1299,
+      "source_subtypes": 21,
+      "source_subtype_tvd_exact": "1057142/6039051",
+      "source_subtype_tvd": 0.17505101380995128,
+      "rank": 73
+    },
+    {
+      "positions_percent": [
+        70,
+        90,
+        100
+      ],
+      "positions_by_band": [
+        [
+          7,
+          9,
+          10
+        ],
+        [
+          7,
+          9,
+          10
+        ],
+        [
+          7,
+          9,
+          10
+        ],
+        [
+          7,
+          9,
+          10
+        ],
+        [
+          6,
+          8,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1064,
+      "source_subtypes": 23,
+      "source_subtype_tvd_exact": "108326/618317",
+      "source_subtype_tvd": 0.17519492428640973,
+      "rank": 74
+    },
+    {
+      "positions_percent": [
+        60,
+        90,
+        100
+      ],
+      "positions_by_band": [
+        [
+          6,
+          9,
+          10
+        ],
+        [
+          6,
+          9,
+          10
+        ],
+        [
+          6,
+          9,
+          10
+        ],
+        [
+          6,
+          9,
+          10
+        ],
+        [
+          5,
+          8,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1106,
+      "source_subtypes": 23,
+      "source_subtype_tvd_exact": "902583/5141794",
+      "source_subtype_tvd": 0.1755385377166024,
+      "rank": 75
+    },
+    {
+      "positions_percent": [
+        20,
+        40,
+        70
+      ],
+      "positions_by_band": [
+        [
+          2,
+          4,
+          7
+        ],
+        [
+          2,
+          4,
+          7
+        ],
+        [
+          2,
+          4,
+          7
+        ],
+        [
+          2,
+          4,
+          7
+        ],
+        [
+          2,
+          4,
+          6
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1460,
+      "source_subtypes": 22,
+      "source_subtype_tvd_exact": "1193537/6787540",
+      "source_subtype_tvd": 0.17584235231026263,
+      "rank": 76
+    },
+    {
+      "positions_percent": [
+        20,
+        50,
+        100
+      ],
+      "positions_by_band": [
+        [
+          2,
+          5,
+          10
+        ],
+        [
+          2,
+          5,
+          10
+        ],
+        [
+          2,
+          5,
+          10
+        ],
+        [
+          2,
+          5,
+          10
+        ],
+        [
+          2,
+          5,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1345,
+      "source_subtypes": 24,
+      "source_subtype_tvd_exact": "1102763/6252905",
+      "source_subtype_tvd": 0.17636010782188438,
+      "rank": 77
+    },
+    {
+      "positions_percent": [
+        50,
+        70,
+        90
+      ],
+      "positions_by_band": [
+        [
+          5,
+          7,
+          9
+        ],
+        [
+          5,
+          7,
+          9
+        ],
+        [
+          5,
+          7,
+          9
+        ],
+        [
+          5,
+          7,
+          9
+        ],
+        [
+          5,
+          6,
+          8
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1166,
+      "source_subtypes": 23,
+      "source_subtype_tvd_exact": "956275/5420734",
+      "source_subtype_tvd": 0.17641061155186732,
+      "rank": 78
+    },
+    {
+      "positions_percent": [
+        10,
+        80,
+        90
+      ],
+      "positions_by_band": [
+        [
+          1,
+          8,
+          9
+        ],
+        [
+          1,
+          8,
+          9
+        ],
+        [
+          1,
+          8,
+          9
+        ],
+        [
+          1,
+          8,
+          9
+        ],
+        [
+          1,
+          7,
+          8
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1534,
+      "source_subtypes": 20,
+      "source_subtype_tvd_exact": "1258817/7131566",
+      "source_subtype_tvd": 0.1765134053306104,
+      "rank": 79
+    },
+    {
+      "positions_percent": [
+        80,
+        90,
+        100
+      ],
+      "positions_by_band": [
+        [
+          8,
+          9,
+          10
+        ],
+        [
+          8,
+          9,
+          10
+        ],
+        [
+          8,
+          9,
+          10
+        ],
+        [
+          8,
+          9,
+          10
+        ],
+        [
+          7,
+          8,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1046,
+      "source_subtypes": 23,
+      "source_subtype_tvd_exact": "430343/2431427",
+      "source_subtype_tvd": 0.17699194752711062,
+      "rank": 80
+    },
+    {
+      "positions_percent": [
+        10,
+        60,
+        90
+      ],
+      "positions_by_band": [
+        [
+          1,
+          6,
+          9
+        ],
+        [
+          1,
+          6,
+          9
+        ],
+        [
+          1,
+          6,
+          9
+        ],
+        [
+          1,
+          6,
+          9
+        ],
+        [
+          1,
+          5,
+          8
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1594,
+      "source_subtypes": 21,
+      "source_subtype_tvd_exact": "657694/3705253",
+      "source_subtype_tvd": 0.17750312866624762,
+      "rank": 81
+    },
+    {
+      "positions_percent": [
+        20,
+        50,
+        90
+      ],
+      "positions_by_band": [
+        [
+          2,
+          5,
+          9
+        ],
+        [
+          2,
+          5,
+          9
+        ],
+        [
+          2,
+          5,
+          9
+        ],
+        [
+          2,
+          5,
+          9
+        ],
+        [
+          2,
+          5,
+          8
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1370,
+      "source_subtypes": 23,
+      "source_subtype_tvd_exact": "566848/3184565",
+      "source_subtype_tvd": 0.17799856495314118,
+      "rank": 82
+    },
+    {
+      "positions_percent": [
+        40,
+        80,
+        100
+      ],
+      "positions_by_band": [
+        [
+          4,
+          8,
+          10
+        ],
+        [
+          4,
+          8,
+          10
+        ],
+        [
+          4,
+          8,
+          10
+        ],
+        [
+          4,
+          8,
+          10
+        ],
+        [
+          4,
+          7,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1189,
+      "source_subtypes": 22,
+      "source_subtype_tvd_exact": "985808/5527661",
+      "source_subtype_tvd": 0.17834089319153254,
+      "rank": 83
+    },
+    {
+      "positions_percent": [
+        10,
+        80,
+        100
+      ],
+      "positions_by_band": [
+        [
+          1,
+          8,
+          10
+        ],
+        [
+          1,
+          8,
+          10
+        ],
+        [
+          1,
+          8,
+          10
+        ],
+        [
+          1,
+          8,
+          10
+        ],
+        [
+          1,
+          7,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1509,
+      "source_subtypes": 22,
+      "source_subtype_tvd_exact": "1262945/7015341",
+      "source_subtype_tvd": 0.1800261740662357,
+      "rank": 84
+    },
+    {
+      "positions_percent": [
+        10,
+        30,
+        40
+      ],
+      "positions_by_band": [
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          3,
+          4
+        ],
+        [
+          1,
+          3,
+          4
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1824,
+      "source_subtypes": 24,
+      "source_subtype_tvd_exact": "1527539/8479776",
+      "source_subtype_tvd": 0.18013907442838112,
+      "rank": 85
+    },
+    {
+      "positions_percent": [
+        40,
+        70,
+        100
+      ],
+      "positions_by_band": [
+        [
+          4,
+          7,
+          10
+        ],
+        [
+          4,
+          7,
+          10
+        ],
+        [
+          4,
+          7,
+          10
+        ],
+        [
+          4,
+          7,
+          10
+        ],
+        [
+          4,
+          6,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1207,
+      "source_subtypes": 23,
+      "source_subtype_tvd_exact": "1013669/5611343",
+      "source_subtype_tvd": 0.18064641566199036,
+      "rank": 86
+    },
+    {
+      "positions_percent": [
+        70,
+        80,
+        90
+      ],
+      "positions_by_band": [
+        [
+          7,
+          8,
+          9
+        ],
+        [
+          7,
+          8,
+          9
+        ],
+        [
+          7,
+          8,
+          9
+        ],
+        [
+          7,
+          8,
+          9
+        ],
+        [
+          6,
+          7,
+          8
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1095,
+      "source_subtypes": 21,
+      "source_subtype_tvd_exact": "929026/5090655",
+      "source_subtype_tvd": 0.18249635852360846,
+      "rank": 87
+    },
+    {
+      "positions_percent": [
+        40,
+        50,
+        100
+      ],
+      "positions_by_band": [
+        [
+          4,
+          5,
+          10
+        ],
+        [
+          4,
+          5,
+          10
+        ],
+        [
+          4,
+          5,
+          10
+        ],
+        [
+          4,
+          5,
+          10
+        ],
+        [
+          4,
+          5,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1260,
+      "source_subtypes": 24,
+      "source_subtype_tvd_exact": "7703/41841",
+      "source_subtype_tvd": 0.18410171841017184,
+      "rank": 88
+    },
+    {
+      "positions_percent": [
+        10,
+        60,
+        100
+      ],
+      "positions_by_band": [
+        [
+          1,
+          6,
+          10
+        ],
+        [
+          1,
+          6,
+          10
+        ],
+        [
+          1,
+          6,
+          10
+        ],
+        [
+          1,
+          6,
+          10
+        ],
+        [
+          1,
+          5,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1569,
+      "source_subtypes": 22,
+      "source_subtype_tvd_exact": "447731/2431427",
+      "source_subtype_tvd": 0.18414330350037242,
+      "rank": 89
+    },
+    {
+      "positions_percent": [
+        50,
+        70,
+        100
+      ],
+      "positions_by_band": [
+        [
+          5,
+          7,
+          10
+        ],
+        [
+          5,
+          7,
+          10
+        ],
+        [
+          5,
+          7,
+          10
+        ],
+        [
+          5,
+          7,
+          10
+        ],
+        [
+          5,
+          6,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1141,
+      "source_subtypes": 25,
+      "source_subtype_tvd_exact": "983932/5304509",
+      "source_subtype_tvd": 0.1854897408977909,
+      "rank": 90
+    },
+    {
+      "positions_percent": [
+        50,
+        80,
+        90
+      ],
+      "positions_by_band": [
+        [
+          5,
+          8,
+          9
+        ],
+        [
+          5,
+          8,
+          9
+        ],
+        [
+          5,
+          8,
+          9
+        ],
+        [
+          5,
+          8,
+          9
+        ],
+        [
+          5,
+          7,
+          8
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1148,
+      "source_subtypes": 23,
+      "source_subtype_tvd_exact": "991535/5337052",
+      "source_subtype_tvd": 0.18578327511142856,
+      "rank": 91
+    },
+    {
+      "positions_percent": [
+        30,
+        50,
+        70
+      ],
+      "positions_by_band": [
+        [
+          3,
+          5,
+          7
+        ],
+        [
+          3,
+          5,
+          7
+        ],
+        [
+          3,
+          5,
+          7
+        ],
+        [
+          3,
+          5,
+          7
+        ],
+        [
+          3,
+          5,
+          6
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1319,
+      "source_subtypes": 24,
+      "source_subtype_tvd_exact": "1153294/6132031",
+      "source_subtype_tvd": 0.1880770009153574,
+      "rank": 92
+    },
+    {
+      "positions_percent": [
+        20,
+        30,
+        50
+      ],
+      "positions_by_band": [
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          2,
+          3,
+          5
+        ],
+        [
+          2,
+          3,
+          5
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1523,
+      "source_subtypes": 23,
+      "source_subtype_tvd_exact": "1357566/7080427",
+      "source_subtype_tvd": 0.19173504648801548,
+      "rank": 93
+    },
+    {
+      "positions_percent": [
+        20,
+        50,
+        80
+      ],
+      "positions_by_band": [
+        [
+          2,
+          5,
+          8
+        ],
+        [
+          2,
+          5,
+          8
+        ],
+        [
+          2,
+          5,
+          8
+        ],
+        [
+          2,
+          5,
+          8
+        ],
+        [
+          2,
+          5,
+          7
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1376,
+      "source_subtypes": 22,
+      "source_subtype_tvd_exact": "312143/1599256",
+      "source_subtype_tvd": 0.19518013376219942,
+      "rank": 94
+    },
+    {
+      "positions_percent": [
+        50,
+        70,
+        80
+      ],
+      "positions_by_band": [
+        [
+          5,
+          7,
+          8
+        ],
+        [
+          5,
+          7,
+          8
+        ],
+        [
+          5,
+          7,
+          8
+        ],
+        [
+          5,
+          7,
+          8
+        ],
+        [
+          5,
+          6,
+          7
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1172,
+      "source_subtypes": 23,
+      "source_subtype_tvd_exact": "532549/2724314",
+      "source_subtype_tvd": 0.1954800364422016,
+      "rank": 95
+    },
+    {
+      "positions_percent": [
+        10,
+        90,
+        100
+      ],
+      "positions_by_band": [
+        [
+          1,
+          9,
+          10
+        ],
+        [
+          1,
+          9,
+          10
+        ],
+        [
+          1,
+          9,
+          10
+        ],
+        [
+          1,
+          9,
+          10
+        ],
+        [
+          1,
+          8,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1503,
+      "source_subtypes": 23,
+      "source_subtype_tvd_exact": "460918/2329149",
+      "source_subtype_tvd": 0.1978911611064814,
+      "rank": 96
+    },
+    {
+      "positions_percent": [
+        40,
+        80,
+        90
+      ],
+      "positions_by_band": [
+        [
+          4,
+          8,
+          9
+        ],
+        [
+          4,
+          8,
+          9
+        ],
+        [
+          4,
+          8,
+          9
+        ],
+        [
+          4,
+          8,
+          9
+        ],
+        [
+          4,
+          7,
+          8
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1214,
+      "source_subtypes": 19,
+      "source_subtype_tvd_exact": "571090/2821943",
+      "source_subtype_tvd": 0.20237474676136266,
+      "rank": 97
+    },
+    {
+      "positions_percent": [
+        40,
+        60,
+        70
+      ],
+      "positions_by_band": [
+        [
+          4,
+          6,
+          7
+        ],
+        [
+          4,
+          6,
+          7
+        ],
+        [
+          4,
+          6,
+          7
+        ],
+        [
+          4,
+          6,
+          7
+        ],
+        [
+          4,
+          5,
+          6
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1298,
+      "source_subtypes": 21,
+      "source_subtype_tvd_exact": "616568/3017201",
+      "source_subtype_tvd": 0.20435098622862713,
+      "rank": 98
+    },
+    {
+      "positions_percent": [
+        10,
+        40,
+        80
+      ],
+      "positions_by_band": [
+        [
+          1,
+          4,
+          8
+        ],
+        [
+          1,
+          4,
+          8
+        ],
+        [
+          1,
+          4,
+          8
+        ],
+        [
+          1,
+          4,
+          8
+        ],
+        [
+          1,
+          4,
+          7
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1677,
+      "source_subtypes": 19,
+      "source_subtype_tvd_exact": "1627498/7796373",
+      "source_subtype_tvd": 0.2087506587999317,
+      "rank": 99
+    },
+    {
+      "positions_percent": [
+        10,
+        40,
+        60
+      ],
+      "positions_by_band": [
+        [
+          1,
+          4,
+          6
+        ],
+        [
+          1,
+          4,
+          6
+        ],
+        [
+          1,
+          4,
+          6
+        ],
+        [
+          1,
+          4,
+          6
+        ],
+        [
+          1,
+          4,
+          5
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1737,
+      "source_subtypes": 20,
+      "source_subtype_tvd_exact": "1688483/8075313",
+      "source_subtype_tvd": 0.20909195717862578,
+      "rank": 100
+    },
+    {
+      "positions_percent": [
+        40,
+        90,
+        100
+      ],
+      "positions_by_band": [
+        [
+          4,
+          9,
+          10
+        ],
+        [
+          4,
+          9,
+          10
+        ],
+        [
+          4,
+          9,
+          10
+        ],
+        [
+          4,
+          9,
+          10
+        ],
+        [
+          4,
+          8,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1183,
+      "source_subtypes": 23,
+      "source_subtype_tvd_exact": "1153441/5499767",
+      "source_subtype_tvd": 0.20972543018640608,
+      "rank": 101
+    },
+    {
+      "positions_percent": [
+        40,
+        60,
+        80
+      ],
+      "positions_by_band": [
+        [
+          4,
+          6,
+          8
+        ],
+        [
+          4,
+          6,
+          8
+        ],
+        [
+          4,
+          6,
+          8
+        ],
+        [
+          4,
+          6,
+          8
+        ],
+        [
+          4,
+          5,
+          7
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1280,
+      "source_subtypes": 19,
+      "source_subtype_tvd_exact": "1259239/5950720",
+      "source_subtype_tvd": 0.211611199989245,
+      "rank": 102
+    },
+    {
+      "positions_percent": [
+        10,
+        40,
+        90
+      ],
+      "positions_by_band": [
+        [
+          1,
+          4,
+          9
+        ],
+        [
+          1,
+          4,
+          9
+        ],
+        [
+          1,
+          4,
+          9
+        ],
+        [
+          1,
+          4,
+          9
+        ],
+        [
+          1,
+          4,
+          8
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1671,
+      "source_subtypes": 20,
+      "source_subtype_tvd_exact": "1718888/7768479",
+      "source_subtype_tvd": 0.22126441997204344,
+      "rank": 103
+    },
+    {
+      "positions_percent": [
+        20,
+        60,
+        70
+      ],
+      "positions_by_band": [
+        [
+          2,
+          6,
+          7
+        ],
+        [
+          2,
+          6,
+          7
+        ],
+        [
+          2,
+          6,
+          7
+        ],
+        [
+          2,
+          6,
+          7
+        ],
+        [
+          2,
+          5,
+          6
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1383,
+      "source_subtypes": 22,
+      "source_subtype_tvd_exact": "1432760/6429567",
+      "source_subtype_tvd": 0.2228392674032326,
+      "rank": 104
+    },
+    {
+      "positions_percent": [
+        20,
+        70,
+        100
+      ],
+      "positions_by_band": [
+        [
+          2,
+          7,
+          10
+        ],
+        [
+          2,
+          7,
+          10
+        ],
+        [
+          2,
+          7,
+          10
+        ],
+        [
+          2,
+          7,
+          10
+        ],
+        [
+          2,
+          6,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1292,
+      "source_subtypes": 24,
+      "source_subtype_tvd_exact": "1344051/6006508",
+      "source_subtype_tvd": 0.22376578870784822,
+      "rank": 105
+    },
+    {
+      "positions_percent": [
+        10,
+        40,
+        100
+      ],
+      "positions_by_band": [
+        [
+          1,
+          4,
+          10
+        ],
+        [
+          1,
+          4,
+          10
+        ],
+        [
+          1,
+          4,
+          10
+        ],
+        [
+          1,
+          4,
+          10
+        ],
+        [
+          1,
+          4,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1646,
+      "source_subtypes": 22,
+      "source_subtype_tvd_exact": "1736043/7652254",
+      "source_subtype_tvd": 0.22686688131366262,
+      "rank": 106
+    },
+    {
+      "positions_percent": [
+        20,
+        70,
+        90
+      ],
+      "positions_by_band": [
+        [
+          2,
+          7,
+          9
+        ],
+        [
+          2,
+          7,
+          9
+        ],
+        [
+          2,
+          7,
+          9
+        ],
+        [
+          2,
+          7,
+          9
+        ],
+        [
+          2,
+          6,
+          8
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1317,
+      "source_subtypes": 22,
+      "source_subtype_tvd_exact": "471404/2040911",
+      "source_subtype_tvd": 0.23097724496560604,
+      "rank": 107
+    },
+    {
+      "positions_percent": [
+        40,
+        60,
+        90
+      ],
+      "positions_by_band": [
+        [
+          4,
+          6,
+          9
+        ],
+        [
+          4,
+          6,
+          9
+        ],
+        [
+          4,
+          6,
+          9
+        ],
+        [
+          4,
+          6,
+          9
+        ],
+        [
+          4,
+          5,
+          8
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1274,
+      "source_subtypes": 20,
+      "source_subtype_tvd_exact": "1408971/5922826",
+      "source_subtype_tvd": 0.23788829859259752,
+      "rank": 108
+    },
+    {
+      "positions_percent": [
+        20,
+        30,
+        70
+      ],
+      "positions_by_band": [
+        [
+          2,
+          3,
+          7
+        ],
+        [
+          2,
+          3,
+          7
+        ],
+        [
+          2,
+          3,
+          7
+        ],
+        [
+          2,
+          3,
+          7
+        ],
+        [
+          2,
+          3,
+          6
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1470,
+      "source_subtypes": 24,
+      "source_subtype_tvd_exact": "3328/13947",
+      "source_subtype_tvd": 0.23861762386176238,
+      "rank": 109
+    },
+    {
+      "positions_percent": [
+        20,
+        70,
+        80
+      ],
+      "positions_by_band": [
+        [
+          2,
+          7,
+          8
+        ],
+        [
+          2,
+          7,
+          8
+        ],
+        [
+          2,
+          7,
+          8
+        ],
+        [
+          2,
+          7,
+          8
+        ],
+        [
+          2,
+          6,
+          7
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1323,
+      "source_subtypes": 22,
+      "source_subtype_tvd_exact": "1500131/6150627",
+      "source_subtype_tvd": 0.24389887404975136,
+      "rank": 110
+    },
+    {
+      "positions_percent": [
+        40,
+        60,
+        100
+      ],
+      "positions_by_band": [
+        [
+          4,
+          6,
+          10
+        ],
+        [
+          4,
+          6,
+          10
+        ],
+        [
+          4,
+          6,
+          10
+        ],
+        [
+          4,
+          6,
+          10
+        ],
+        [
+          4,
+          5,
+          9
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1249,
+      "source_subtypes": 22,
+      "source_subtype_tvd_exact": "1529550/5806601",
+      "source_subtype_tvd": 0.2634157228988181,
+      "rank": 111
+    },
+    {
+      "positions_percent": [
+        20,
+        50,
+        70
+      ],
+      "positions_by_band": [
+        [
+          2,
+          5,
+          7
+        ],
+        [
+          2,
+          5,
+          7
+        ],
+        [
+          2,
+          5,
+          7
+        ],
+        [
+          2,
+          5,
+          7
+        ],
+        [
+          2,
+          5,
+          6
+        ]
+      ],
+      "app_count": 15,
+      "source_occurrences": 1394,
+      "source_subtypes": 23,
+      "source_subtype_tvd_exact": "1768919/6480706",
+      "source_subtype_tvd": 0.27295158891639276,
+      "rank": 112
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+# FlowArk 抓包代理配置
+# 真实后端 URL / token 继续放在仓库根 .env。
+# 这里仅控制是否启用本地拦截、保存与转发。
+
+enabled: false
+listen_host: "127.0.0.1"
+port: 0
+strip_prefix: "/api/anthropic"
+output_root: null

@@ -1,0 +1,1391 @@
+{
+  "schema_version": "flowark-manual-audit-sampling-v1",
+  "input": {
+    "path": "data/benchmarks/source-first-v3.2-strat15.template.json",
+    "sha256": "487790ba6279ebf8d0acad277c5df079c3a82d3a65cd410f3744fcdf3e1178d1"
+  },
+  "sampling": {
+    "seed": "260623-m1-stratified-20pct-v1",
+    "stratification": "app_name",
+    "population": "All Sub15 benchmark cases, each with repeat_idx=1.",
+    "stable_key": [
+      "app_name",
+      "flow_id_or_source_id",
+      "repeat_idx"
+    ],
+    "benchmark_source_identifier": "source_id, falling back to case_id; identifiers are used verbatim.",
+    "hash_input": "seed|20pct|app_name|flow_id_or_source_id|repeat_idx",
+    "encoding": "UTF-8",
+    "selection": "Within each app, order by ascending SHA-256 hexadecimal digest and take round_half_up(n * 0.20).",
+    "hash_tie_break": "Ascending stable key.",
+    "quota_integer_formula": "(2 * n + 5) // 10",
+    "output_order": "Apps by descending population count then app_name; selected keys ascending within each app."
+  },
+  "population_count": 1284,
+  "app_count": 15,
+  "sample_count": 257,
+  "per_app_counts": [
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "population_count": 236,
+      "sample_count": 47
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "population_count": 183,
+      "sample_count": 37
+    },
+    {
+      "app_name": "de.westnordost.streetcomplete.expert_6302",
+      "population_count": 137,
+      "sample_count": 27
+    },
+    {
+      "app_name": "me.knighthat.kreate_133",
+      "population_count": 111,
+      "sample_count": 22
+    },
+    {
+      "app_name": "net.bible.android.activity_910",
+      "population_count": 91,
+      "sample_count": 18
+    },
+    {
+      "app_name": "im.quicksy.client_4217104",
+      "population_count": 79,
+      "sample_count": 16
+    },
+    {
+      "app_name": "ws.xsoh.etar_53",
+      "population_count": 68,
+      "sample_count": 14
+    },
+    {
+      "app_name": "com.kunzisoft.keepass.libre_153",
+      "population_count": 61,
+      "sample_count": 12
+    },
+    {
+      "app_name": "org.schabi.newpipe_1009",
+      "population_count": 58,
+      "sample_count": 12
+    },
+    {
+      "app_name": "com.karin.idTech4Amm_11071",
+      "population_count": 53,
+      "sample_count": 11
+    },
+    {
+      "app_name": "org.kde.kdeconnect_tp_13505",
+      "population_count": 50,
+      "sample_count": 10
+    },
+    {
+      "app_name": "me.zhanghai.android.files_39",
+      "population_count": 47,
+      "sample_count": 9
+    },
+    {
+      "app_name": "app.passwordstore.agrahn_11602",
+      "population_count": 40,
+      "sample_count": 8
+    },
+    {
+      "app_name": "com.nononsenseapps.feeder_3922",
+      "population_count": 36,
+      "sample_count": 7
+    },
+    {
+      "app_name": "com.tutpro.baresip_483",
+      "population_count": 34,
+      "sample_count": 7
+    }
+  ],
+  "selected_keys": [
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "icc_payload.intent_extra.BrowserActivity.1f90fe40",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "icc_payload.intent_extra.BrowserActivity.4a50fb48",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "icc_payload.intent_extra.BrowserActivity.9ff798e5",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "icc_payload.intent_extra.BrowserActivity.e24cf44b",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "icc_payload.intent_extra.SelectedTextSearchActivity.6748325d",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "persistent_storage.dao_return.AlwaysOnLockDownDetector.6dc11831",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "persistent_storage.dao_return.AppDaysUsedDatabaseRepository.1c58df84",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "persistent_storage.dao_return.RealAppTrackerBlockingStatsRepository.da98aec5",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "persistent_storage.dao_return.RealAppTrackerRepository.6198d09e",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "persistent_storage.dao_return.RealAutoExcludeAppsRepository.1532ff14",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "persistent_storage.dao_return.RealAutoExcludeAppsRepository.9a0a0027",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "persistent_storage.dao_return.RealDrmRepository.9ce92b13",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "persistent_storage.dao_return.RealElementHidingRepository.5ea01546",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "persistent_storage.dao_return.RealFingerprintingCanvasRepository.c61a8a7d",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "persistent_storage.dao_return.RealGpcRepository.c57e0d93",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "persistent_storage.dao_return.RealNetPGeoswitchingRepository.e8d86dca",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "persistent_storage.dao_return.RealNetPManualExclusionListRepository.0feb8506",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "persistent_storage.dao_return.RealRequestFiltererRepository.62002bd6",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "persistent_storage.dao_return.RealSecureStorageRepository.d4e902b7",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "persistent_storage.dao_return.RealSyncSavedSitesRepository.1aaa735c",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "persistent_storage.dao_return.RealTrackerAllowlistRepository.368247c1",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "persistent_storage.dao_return.RealVpnStateMonitor.b7bcfed0",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "persistent_storage.dao_return.SitePermissionsRepositoryImpl.48df27be",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "persistent_storage.dao_return.SitePermissionsRepositoryImpl.9c0ece18",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "persistent_storage.dao_return.SitePermissionsRepositoryImpl.e38ce2c5",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "persistent_storage.dao_return.TrackerDataLoader.f2fd1573",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "persistent_storage.dao_return.WideEventRepositoryImpl.4c2cccf0",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.SafeSharedPreferences.c21c66ea",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "platform_api.network_state.RealNetworkInfoProvider.fc3021f3",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "platform_api.network_state.item.a579420b",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "platform_api.package_info.DeviceShieldActivityFeedFragment.735ea63d",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "platform_api.package_info.SigningCertificateHashExtractorImpl.666e2cf5",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "platform_api.package_info.SigningCertificateHashExtractorImpl.ae0c06c5",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "platform_api.package_info.getSHA256Fingerprint.6e61da3a",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "platform_api.package_info.getSHA256FingerprintLegacy.ccc6ff95",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "platform_api.settings.NonGranularFireDialog.1d6e16ed",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "platform_api.settings.item.93b76654",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "platform_api.settings.item.ea2e53d6",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "remote_payload.gson_from_json.Failure.56759614",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "remote_payload.http_response_body.RealBrokerJsonUpdater.490b149e",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "remote_payload.http_response_body.SyncServiceRemote.546e7f55",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "ui_input.checked_widget_value.Listener.df9ef0b2",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "ui_input.text_widget_value.DuckChatContextualFragment.8d3f3bba",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "ui_input.text_widget_value.SystemSearchActivity.101d1c93",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "ui_input.text_widget_value.SystemSearchActivity.5c734017",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "ui_input.text_widget_value.TransitionState.6ccc66b2",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.duckduckgo.mobile.android_52702000",
+      "flow_id_or_source_id": "ui_input.text_widget_value.TransitionState.f4ffdd00",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "icc_payload.intent_extra.MainActivity.9f381f16",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "icc_payload.intent_extra.ServiceVPN.1dfe83aa",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.DefaultVanillaBridgeRepositoryImpl.05822eec",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.DefaultVanillaBridgeRepositoryImpl.6e922bf3",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.DnsServerFeatures.739d587e",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.FirewallNotification.686a5dc7",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.HttpsConnectionManager.c435bdef",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.ITPDFragmentPresenter.cdb5790d",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.ModulesIptablesRules.f3282b7b",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.Patch.a84de7f4",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.Patch.c4c75400",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.Tethering.118155b6",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.Tethering.23c86f3e",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.Tethering.58b297f2",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.Tethering.5dc0afdd",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.Tethering.60ef3f09",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.ThemeUtils.67096530",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.TorFragmentPresenter.1e15d76c",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.Utils.0bfe92f8",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.Utils.6387b22d",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.VpnPreferenceHolder.71b26ee2",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.VpnPreferenceHolder.947ef76f",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "platform_api.network_state.NetworkChecker.183299c1",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "platform_api.network_state.NetworkChecker.5107b400",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "platform_api.network_state.NetworkChecker.61e73671",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "platform_api.network_state.NetworkChecker.84a25a56",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "platform_api.network_state.NetworkChecker.968df372",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "platform_api.network_state.NetworkChecker.a263b572",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "platform_api.network_state.NetworkChecker.cd4023f9",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "platform_api.network_state.NetworkChecker.e55b6852",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "platform_api.network_state.NetworkChecker.f08f13c1",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "platform_api.settings.VpnUtils.9900c7d2",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "ui_input.text_widget_value.DialogEditDomainIp.41af2dc5",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "ui_input.text_widget_value.MainActivity.119753da",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "ui_input.text_widget_value.MainActivity.e995f917",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "ui_input.text_widget_value.ProxyFragment.909f72cd",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "pan.alexander.tordnscrypt.stable_26603",
+      "flow_id_or_source_id": "ui_input.text_widget_value.ProxyFragment.b4e6e3ed",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "de.westnordost.streetcomplete.expert_6302",
+      "flow_id_or_source_id": "persistent_storage.dao_return.ElementDao.ad04dcda",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "de.westnordost.streetcomplete.expert_6302",
+      "flow_id_or_source_id": "persistent_storage.dao_return.ElementGeometryDao.16e8ee02",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "de.westnordost.streetcomplete.expert_6302",
+      "flow_id_or_source_id": "persistent_storage.dao_return.Listener.0e66661c",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "de.westnordost.streetcomplete.expert_6302",
+      "flow_id_or_source_id": "persistent_storage.dao_return.OsmoseQuest.8fb2e925",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "de.westnordost.streetcomplete.expert_6302",
+      "flow_id_or_source_id": "persistent_storage.dao_return.StatisticsController.0ad58bcf",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "de.westnordost.streetcomplete.expert_6302",
+      "flow_id_or_source_id": "persistent_storage.file_read.loadCustomGeometryText.57036b26",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "de.westnordost.streetcomplete.expert_6302",
+      "flow_id_or_source_id": "platform_api.settings.FocusGeometryMapComponent.9eaf360e",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "de.westnordost.streetcomplete.expert_6302",
+      "flow_id_or_source_id": "platform_api.settings.SceneMapComponent.727df58e",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "de.westnordost.streetcomplete.expert_6302",
+      "flow_id_or_source_id": "platform_api.settings.SoundFx.96f842de",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "de.westnordost.streetcomplete.expert_6302",
+      "flow_id_or_source_id": "ui_input.checked_widget_value.Listener.891cc53d",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "de.westnordost.streetcomplete.expert_6302",
+      "flow_id_or_source_id": "ui_input.checked_widget_value.questMonitorDialog.82c33c1d",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "de.westnordost.streetcomplete.expert_6302",
+      "flow_id_or_source_id": "ui_input.checked_widget_value.questMonitorDialog.a77cd727",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "de.westnordost.streetcomplete.expert_6302",
+      "flow_id_or_source_id": "ui_input.checked_widget_value.questMonitorDialog.b7c77e25",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "de.westnordost.streetcomplete.expert_6302",
+      "flow_id_or_source_id": "ui_input.compose_value_change.AddressNumberAndNameForm.9ae12566",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "de.westnordost.streetcomplete.expert_6302",
+      "flow_id_or_source_id": "ui_input.compose_value_change.BlockAndHouseNumberForm.d36342a2",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "de.westnordost.streetcomplete.expert_6302",
+      "flow_id_or_source_id": "ui_input.compose_value_change.FlatRangeInput.8eb5f0f4",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "de.westnordost.streetcomplete.expert_6302",
+      "flow_id_or_source_id": "ui_input.compose_value_change.HouseNumberForm.10d72574",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "de.westnordost.streetcomplete.expert_6302",
+      "flow_id_or_source_id": "ui_input.compose_value_change.HouseNumberInput.17061ca9",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "de.westnordost.streetcomplete.expert_6302",
+      "flow_id_or_source_id": "ui_input.compose_value_change.HouseNumberInput.62bc1352",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "de.westnordost.streetcomplete.expert_6302",
+      "flow_id_or_source_id": "ui_input.compose_value_change.HydrantDiameterForm.a2bfeebf",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "de.westnordost.streetcomplete.expert_6302",
+      "flow_id_or_source_id": "ui_input.compose_value_change.LabelOrElementSelectionDialog.f3605714",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "de.westnordost.streetcomplete.expert_6302",
+      "flow_id_or_source_id": "ui_input.compose_value_change.TextInputDialog.340c08c2",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "de.westnordost.streetcomplete.expert_6302",
+      "flow_id_or_source_id": "ui_input.compose_value_change.getFilters.b82e6267",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "de.westnordost.streetcomplete.expert_6302",
+      "flow_id_or_source_id": "ui_input.text_widget_value.AddContactWebsiteForm.32612684",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "de.westnordost.streetcomplete.expert_6302",
+      "flow_id_or_source_id": "ui_input.text_widget_value.AddContactWebsiteForm.3db3f02f",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "de.westnordost.streetcomplete.expert_6302",
+      "flow_id_or_source_id": "ui_input.text_widget_value.numericBox.ae168275",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "de.westnordost.streetcomplete.expert_6302",
+      "flow_id_or_source_id": "ui_input.text_widget_value.numericBox.f5b6d17a",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.knighthat.kreate_133",
+      "flow_id_or_source_id": "persistent_storage.file_input_stream.ExportDatabaseDialog.802a235c",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.knighthat.kreate_133",
+      "flow_id_or_source_id": "persistent_storage.file_read.loadAppLog.afd2caf7",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.knighthat.kreate_133",
+      "flow_id_or_source_id": "platform_api.network_state.ConnectivityUtilSdk29.d0004052",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.knighthat.kreate_133",
+      "flow_id_or_source_id": "platform_api.network_state.isNetworkAvailable.c45b8447",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.knighthat.kreate_133",
+      "flow_id_or_source_id": "platform_api.network_state.isNetworkAvailable.dcba6940",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.knighthat.kreate_133",
+      "flow_id_or_source_id": "platform_api.package_info.getVersionCode.1335a6c3",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.knighthat.kreate_133",
+      "flow_id_or_source_id": "platform_api.package_info.getVersionName.8cdaf9b4",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.knighthat.kreate_133",
+      "flow_id_or_source_id": "platform_api.settings.MainActivity.dae28a0f",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.knighthat.kreate_133",
+      "flow_id_or_source_id": "remote_payload.http_response_body.InnertubeImpl.46442e87",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.knighthat.kreate_133",
+      "flow_id_or_source_id": "remote_payload.http_response_body.InnertubeImpl.e4f3a0a3",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.knighthat.kreate_133",
+      "flow_id_or_source_id": "remote_payload.http_response_body.YtMusic.8912b1ec",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.knighthat.kreate_133",
+      "flow_id_or_source_id": "remote_payload.http_response_body.YtMusic.9bf38d03",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.knighthat.kreate_133",
+      "flow_id_or_source_id": "remote_payload.http_response_body.item.14350ad7",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.knighthat.kreate_133",
+      "flow_id_or_source_id": "remote_payload.http_response_body.item.2261c75f",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.knighthat.kreate_133",
+      "flow_id_or_source_id": "remote_payload.http_response_body.item.b5f002f7",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.knighthat.kreate_133",
+      "flow_id_or_source_id": "remote_payload.http_response_body.item.c21badb3",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.knighthat.kreate_133",
+      "flow_id_or_source_id": "remote_payload.http_response_body_stream.SearchSuggestions.7c0913d1",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.knighthat.kreate_133",
+      "flow_id_or_source_id": "ui_input.compose_value_change.ColorPickerDialog.e80f3b1c",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.knighthat.kreate_133",
+      "flow_id_or_source_id": "ui_input.compose_value_change.CustomSlider.2dac21ce",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.knighthat.kreate_133",
+      "flow_id_or_source_id": "ui_input.compose_value_change.ExperimentalRpcScreen.18149b4d",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.knighthat.kreate_133",
+      "flow_id_or_source_id": "ui_input.compose_value_change.ExperimentalRpcScreen.72392ec9",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.knighthat.kreate_133",
+      "flow_id_or_source_id": "ui_input.compose_value_change.SelectLyricFromTrack.3001bf0e",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "net.bible.android.activity_910",
+      "flow_id_or_source_id": "persistent_storage.dao_return.DownloadActivity.be38e093",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "net.bible.android.activity_910",
+      "flow_id_or_source_id": "persistent_storage.dao_return.HelpItem.cd722f3f",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "net.bible.android.activity_910",
+      "flow_id_or_source_id": "persistent_storage.dao_return.HelpItem.e4af0ccd",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "net.bible.android.activity_910",
+      "flow_id_or_source_id": "persistent_storage.dao_return.ReadingPlanControl.1e40ca9c",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "net.bible.android.activity_910",
+      "flow_id_or_source_id": "persistent_storage.dao_return.ReadingPlanControl.7530aca7",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "net.bible.android.activity_910",
+      "flow_id_or_source_id": "persistent_storage.dao_return.ReadingPlanRepository.3ad3539f",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "net.bible.android.activity_910",
+      "flow_id_or_source_id": "persistent_storage.dao_return.ShowAgain.baee04e5",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "net.bible.android.activity_910",
+      "flow_id_or_source_id": "persistent_storage.file_input_stream.ReadingPlanTextFileDao.4d9018ab",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "net.bible.android.activity_910",
+      "flow_id_or_source_id": "persistent_storage.file_input_stream.exportStudyPads.e1f78040",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "net.bible.android.activity_910",
+      "flow_id_or_source_id": "persistent_storage.file_read.BugReport.794785d7",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "net.bible.android.activity_910",
+      "flow_id_or_source_id": "platform_api.clipboard.CustomRepositoryEditor.b32955c5",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "net.bible.android.activity_910",
+      "flow_id_or_source_id": "ui_input.checked_widget_value.LabelData.ebd9ef98",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "net.bible.android.activity_910",
+      "flow_id_or_source_id": "ui_input.checked_widget_value.LabelData.fc1be686",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "net.bible.android.activity_910",
+      "flow_id_or_source_id": "ui_input.checked_widget_value.ShareWidget.595a58e5",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "net.bible.android.activity_910",
+      "flow_id_or_source_id": "ui_input.checked_widget_value.ShareWidget.d138dae8",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "net.bible.android.activity_910",
+      "flow_id_or_source_id": "ui_input.text_widget_value.CalculatorActivity.1a2d9464",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "net.bible.android.activity_910",
+      "flow_id_or_source_id": "ui_input.text_widget_value.CalculatorActivity.1a59c7e0",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "net.bible.android.activity_910",
+      "flow_id_or_source_id": "ui_input.text_widget_value.Search.6826e54e",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "im.quicksy.client_4217104",
+      "flow_id_or_source_id": "icc_payload.intent_extra.StartConversationActivity.740d52a1",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "im.quicksy.client_4217104",
+      "flow_id_or_source_id": "persistent_storage.file_input_stream.FileTransmitter.85aaf6e2",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "im.quicksy.client_4217104",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.AppSettings.ae841da6",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "im.quicksy.client_4217104",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.BackupSettingsFragment.38ead742",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "im.quicksy.client_4217104",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.UnifiedPushBroker.7c0740b7",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "im.quicksy.client_4217104",
+      "flow_id_or_source_id": "platform_api.clipboard.VerifyActivity.71f96723",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "im.quicksy.client_4217104",
+      "flow_id_or_source_id": "remote_payload.http_response_body.ChannelDiscoveryService.cd308e95",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "im.quicksy.client_4217104",
+      "flow_id_or_source_id": "ui_input.text_widget_value.ChannelDiscoveryActivity.e6d1559b",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "im.quicksy.client_4217104",
+      "flow_id_or_source_id": "ui_input.text_widget_value.ConversationFragment.76996350",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "im.quicksy.client_4217104",
+      "flow_id_or_source_id": "ui_input.text_widget_value.ConversationFragment.afa29e04",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "im.quicksy.client_4217104",
+      "flow_id_or_source_id": "ui_input.text_widget_value.MagicCreateActivity.43a62523",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "im.quicksy.client_4217104",
+      "flow_id_or_source_id": "ui_input.text_widget_value.StartConversationActivity.a5338086",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "im.quicksy.client_4217104",
+      "flow_id_or_source_id": "ui_input.text_widget_value.StartConversationActivity.b460f668",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "im.quicksy.client_4217104",
+      "flow_id_or_source_id": "ui_input.text_widget_value.StartConversationActivity.bbf536cd",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "im.quicksy.client_4217104",
+      "flow_id_or_source_id": "ui_input.text_widget_value.StartConversationActivity.dd168c3b",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "im.quicksy.client_4217104",
+      "flow_id_or_source_id": "ui_input.text_widget_value.XmppActivity.ed73893f",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "ws.xsoh.etar_53",
+      "flow_id_or_source_id": "icc_payload.intent_extra.AlertReceiver.83630bdc",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "ws.xsoh.etar_53",
+      "flow_id_or_source_id": "icc_payload.intent_extra.AllInOneActivity.0205733e",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "ws.xsoh.etar_53",
+      "flow_id_or_source_id": "icc_payload.intent_extra.AllInOneActivity.78a42d53",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "ws.xsoh.etar_53",
+      "flow_id_or_source_id": "icc_payload.intent_extra.AllInOneActivity.955b0bb3",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "ws.xsoh.etar_53",
+      "flow_id_or_source_id": "icc_payload.intent_extra.EditEventActivity.9bb4e1f1",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "ws.xsoh.etar_53",
+      "flow_id_or_source_id": "icc_payload.intent_extra.EditEventActivity.e014dad0",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "ws.xsoh.etar_53",
+      "flow_id_or_source_id": "icc_payload.intent_extra.EventInfoActivity.ddfa8645",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "ws.xsoh.etar_53",
+      "flow_id_or_source_id": "persistent_storage.database_cursor.DelayedMessageHandler.590a768e",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "ws.xsoh.etar_53",
+      "flow_id_or_source_id": "persistent_storage.database_cursor.DeleteEventHelper.ec203382",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "ws.xsoh.etar_53",
+      "flow_id_or_source_id": "persistent_storage.database_cursor.QueryHandler.7fc32ab9",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "ws.xsoh.etar_53",
+      "flow_id_or_source_id": "persistent_storage.database_cursor.ShareType.ff960281",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "ws.xsoh.etar_53",
+      "flow_id_or_source_id": "platform_api.clipboard.RecipientTextWatcher.fe6591d8",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "ws.xsoh.etar_53",
+      "flow_id_or_source_id": "ui_input.checked_widget_value.EditEventView.257b6c18",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "ws.xsoh.etar_53",
+      "flow_id_or_source_id": "ui_input.checked_widget_value.EditEventView.f75fce34",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.kunzisoft.keepass.libre_153",
+      "flow_id_or_source_id": "icc_payload.intent_extra.MainCredentialActivity.999dc2a1",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.kunzisoft.keepass.libre_153",
+      "flow_id_or_source_id": "persistent_storage.dao_return.CipherDatabaseListener.1d69c70c",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.kunzisoft.keepass.libre_153",
+      "flow_id_or_source_id": "persistent_storage.dao_return.FileDatabaseHistoryAction.0f793c0f",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.kunzisoft.keepass.libre_153",
+      "flow_id_or_source_id": "platform_api.settings.MagikeyboardService.9488257b",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.kunzisoft.keepass.libre_153",
+      "flow_id_or_source_id": "ui_input.checked_widget_value.AssignMainCredentialDialogListener.1c4c8a0c",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.kunzisoft.keepass.libre_153",
+      "flow_id_or_source_id": "ui_input.checked_widget_value.AssignMainCredentialDialogListener.32f4937c",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.kunzisoft.keepass.libre_153",
+      "flow_id_or_source_id": "ui_input.checked_widget_value.AssignMainCredentialDialogListener.c5ed03ac",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.kunzisoft.keepass.libre_153",
+      "flow_id_or_source_id": "ui_input.checked_widget_value.MainCredentialView.2af9b567",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.kunzisoft.keepass.libre_153",
+      "flow_id_or_source_id": "ui_input.checked_widget_value.MainCredentialView.8a9348a8",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.kunzisoft.keepass.libre_153",
+      "flow_id_or_source_id": "ui_input.text_widget_value.EntryCustomFieldDialogFragment.e5b90ba6",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.kunzisoft.keepass.libre_153",
+      "flow_id_or_source_id": "ui_input.text_widget_value.InputPreferenceDialogFragmentCompat.07d0c8db",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.kunzisoft.keepass.libre_153",
+      "flow_id_or_source_id": "ui_input.text_widget_value.PasswordEditView.3435d52d",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "org.schabi.newpipe_1009",
+      "flow_id_or_source_id": "icc_payload.intent_extra.MainActivity.2f065353",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "org.schabi.newpipe_1009",
+      "flow_id_or_source_id": "icc_payload.intent_extra.MainActivity.8ceb2035",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "org.schabi.newpipe_1009",
+      "flow_id_or_source_id": "persistent_storage.file_input_stream.ChunkFileInputStream.402a3d8e",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "org.schabi.newpipe_1009",
+      "flow_id_or_source_id": "persistent_storage.file_input_stream.FileStreamSAF.6fab2665",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "org.schabi.newpipe_1009",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.Action.861bf9e9",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "org.schabi.newpipe_1009",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.ChannelTabHelper.e13a1d43",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "org.schabi.newpipe_1009",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.PeertubeHelper.2d60848d",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "org.schabi.newpipe_1009",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.TabsManager.5ea5f6e9",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "org.schabi.newpipe_1009",
+      "flow_id_or_source_id": "ui_input.text_widget_value.BookmarkFragment.d17335b3",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "org.schabi.newpipe_1009",
+      "flow_id_or_source_id": "ui_input.text_widget_value.DeleteScreen.d5adc4ea",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "org.schabi.newpipe_1009",
+      "flow_id_or_source_id": "ui_input.text_widget_value.PeertubeInstanceListFragment.8bc84a54",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "org.schabi.newpipe_1009",
+      "flow_id_or_source_id": "ui_input.text_widget_value.PlaylistCreationDialog.ddc0754c",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.karin.idTech4Amm_11071",
+      "flow_id_or_source_id": "icc_payload.bundle_value.Q3EMain.fea67d25",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.karin.idTech4Amm_11071",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.Q3EContextUtils.ca99d048",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.karin.idTech4Amm_11071",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.Q3EControllerControl.01392210",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.karin.idTech4Amm_11071",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.Q3EMain.2cdc12c2",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.karin.idTech4Amm_11071",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.Q3EMain.2d44b670",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.karin.idTech4Amm_11071",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.Q3EMouseDevice.866c0949",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.karin.idTech4Amm_11071",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.Q3EUiConfig.27ba4cd9",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.karin.idTech4Amm_11071",
+      "flow_id_or_source_id": "platform_api.clipboard.Q3EContextUtils.1b83046b",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.karin.idTech4Amm_11071",
+      "flow_id_or_source_id": "ui_input.checked_widget_value.CVarSetting_radiogroup.f30640d4",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.karin.idTech4Amm_11071",
+      "flow_id_or_source_id": "ui_input.checked_widget_value.ViewHolder.ce779d26",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.karin.idTech4Amm_11071",
+      "flow_id_or_source_id": "ui_input.text_widget_value.ContextUtility.d8d82489",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "org.kde.kdeconnect_tp_13505",
+      "flow_id_or_source_id": "icc_payload.intent_extra.MainActivity.a43b9355",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "org.kde.kdeconnect_tp_13505",
+      "flow_id_or_source_id": "icc_payload.intent_extra.SendKeystrokesToHostActivity.aef14aac",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "org.kde.kdeconnect_tp_13505",
+      "flow_id_or_source_id": "icc_payload.intent_extra.ShareActivity.69496f45",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "org.kde.kdeconnect_tp_13505",
+      "flow_id_or_source_id": "icc_payload.intent_extra.ShareBroadcastReceiver.5c8716f5",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "org.kde.kdeconnect_tp_13505",
+      "flow_id_or_source_id": "persistent_storage.database_cursor.ContactsHelper.3d61f282",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "org.kde.kdeconnect_tp_13505",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.FindMyPhoneSettingsFragment.04976e38",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "org.kde.kdeconnect_tp_13505",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.FindMyPhoneSettingsFragment.93ebb698",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "org.kde.kdeconnect_tp_13505",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.MessageContentObserver.eed72367",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "org.kde.kdeconnect_tp_13505",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.TelephonyPlugin.6d8d7622",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "org.kde.kdeconnect_tp_13505",
+      "flow_id_or_source_id": "platform_api.sensor_event.PresenterActivity.7e7535e2",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.zhanghai.android.files_39",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.IntegerSettingLiveData.7008e3a3",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.zhanghai.android.files_39",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.ParcelValueSettingLiveData.03bb1486",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.zhanghai.android.files_39",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.migrateSftpServersSetting1_5_0.a3cc4423",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.zhanghai.android.files_39",
+      "flow_id_or_source_id": "ui_input.checked_widget_value.FileJobConflictDialogFragment.c8a6e5a4",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.zhanghai.android.files_39",
+      "flow_id_or_source_id": "ui_input.checked_widget_value.FileJobErrorDialogFragment.6f8a34c2",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.zhanghai.android.files_39",
+      "flow_id_or_source_id": "ui_input.checked_widget_value.SetPrincipalDialogFragment.cfa3ccda",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.zhanghai.android.files_39",
+      "flow_id_or_source_id": "ui_input.checked_widget_value.SetSeLinuxContextDialogFragment.10a0866c",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.zhanghai.android.files_39",
+      "flow_id_or_source_id": "ui_input.text_widget_value.EditSftpServerFragment.cc7aae95",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "me.zhanghai.android.files_39",
+      "flow_id_or_source_id": "ui_input.text_widget_value.EditSmbServerFragment.88e5e4fb",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "app.passwordstore.agrahn_11602",
+      "flow_id_or_source_id": "persistent_storage.file_read.SshjSessionFactory.01df26b9",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "app.passwordstore.agrahn_11602",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.AutofillPreferences.1e46f0e4",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "app.passwordstore.agrahn_11602",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.AutofillPreferences.c2c65a5c",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "app.passwordstore.agrahn_11602",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.migrateToClipboardHistory.7acbff16",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "app.passwordstore.agrahn_11602",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.migrateToDiceware.30c51799",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "app.passwordstore.agrahn_11602",
+      "flow_id_or_source_id": "persistent_storage.shared_preferences.moveToPasswordGeneratorPrefs.43cb2f2b",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "app.passwordstore.agrahn_11602",
+      "flow_id_or_source_id": "platform_api.settings.class.25939b1b",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "app.passwordstore.agrahn_11602",
+      "flow_id_or_source_id": "ui_input.text_widget_value.PGPKeyCreationActivity.d6d110a3",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.nononsenseapps.feeder_3922",
+      "flow_id_or_source_id": "persistent_storage.dao_return.FeedStore.0c348300",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.nononsenseapps.feeder_3922",
+      "flow_id_or_source_id": "persistent_storage.dao_return.FeedStore.212adac8",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.nononsenseapps.feeder_3922",
+      "flow_id_or_source_id": "persistent_storage.dao_return.FeedStore.b83083d7",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.nononsenseapps.feeder_3922",
+      "flow_id_or_source_id": "persistent_storage.dao_return.FeedStore.f4ff2290",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.nononsenseapps.feeder_3922",
+      "flow_id_or_source_id": "persistent_storage.dao_return.OPMLImporter.4d8c1706",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.nononsenseapps.feeder_3922",
+      "flow_id_or_source_id": "persistent_storage.dao_return.exportOpml.fe19ce68",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.nononsenseapps.feeder_3922",
+      "flow_id_or_source_id": "ui_input.compose_value_change.EditFeedView.fd2273bd",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.tutpro.baresip_483",
+      "flow_id_or_source_id": "icc_payload.intent_extra.MainActivity.bd051e77",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.tutpro.baresip_483",
+      "flow_id_or_source_id": "persistent_storage.file_read.Blocked.f5af4516",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.tutpro.baresip_483",
+      "flow_id_or_source_id": "platform_api.network_state.BaresipService.84e49f8b",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.tutpro.baresip_483",
+      "flow_id_or_source_id": "platform_api.network_state.BaresipService.d7bec706",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.tutpro.baresip_483",
+      "flow_id_or_source_id": "ui_input.compose_value_change.AuthUser.e2fb8a72",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.tutpro.baresip_483",
+      "flow_id_or_source_id": "ui_input.compose_value_change.CountryCode.df507446",
+      "repeat_idx": 1
+    },
+    {
+      "app_name": "com.tutpro.baresip_483",
+      "flow_id_or_source_id": "ui_input.compose_value_change.TelProvider.542e4100",
+      "repeat_idx": 1
+    }
+  ]
+}

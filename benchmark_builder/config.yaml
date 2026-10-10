@@ -1,0 +1,79 @@
+# benchmark_builder v2 defaults
+dataset: fdroid-open-source-app
+benchmark_family: source_first_mixed
+source_root: /absolute/path/to/apps
+out_dir: benchmark_builder_v2_inventory
+export_out_dir: benchmark_builder_v2_export
+
+source_kinds:
+  - platform_api
+  - ui_input
+  - icc_payload
+  - remote_payload
+  - persistent_storage
+
+excluded_dirs:
+  - .git
+  - .gradle
+  - .idea
+  - .flutter
+  - .pub-cache
+  - .venv
+  - __pycache__
+  - androidHostTest
+  - androidInstrumentedTest
+  - androidTest
+  - androidUnitTest
+  - build
+  - build-logic
+  - build-plugin
+  - buildSrc
+  - codegen
+  - commonTest
+  - dbTest
+  - debug
+  - daogenerator
+  - decompiled
+  - deplibs
+  - dist
+  - example
+  - examples
+  - generated
+  - GBDaoGenerator
+  - node_modules
+  - submodule
+  - submodules
+  - test
+  - testPlay
+  - tests
+  - testing
+  - third_party
+  - tools
+  - vendor
+
+include_extensions:
+  - .kt
+  - .java
+  - .xml
+
+app_names: []
+app_limit:
+
+max_cases_per_kind:
+
+sink_categories:
+  - log
+  - network
+  - icc
+  - file
+  - database
+  - storage
+  - others
+
+sort_fields:
+  - source_subtype
+  - classname
+  - method
+  - file_path
+  - line_number
+  - occurrence_id

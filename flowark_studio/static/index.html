@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FlowArk Studio</title>
+  <link rel="stylesheet" href="/static/styles.css?v=__STATIC_VERSION__" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="topbar-left">
+        <button id="toggle-left-btn" class="icon-btn" title="Collapse/expand task list">◧ Sidebar</button>
+      </div>
+      <div class="topbar-center">
+        <div class="brand">
+          <h1>FlowArk Studio</h1>
+          <div id="health-pill" class="pill">connecting...</div>
+        </div>
+      </div>
+      <div class="top-actions">
+        <button id="task-summary-modal-btn" class="tiny-btn" disabled title="View current task details">Task details</button>
+        <button id="stop-task-btn" class="tiny-btn danger" disabled>Stop</button>
+        <button id="pause-eval-btn" class="tiny-btn" disabled>Pause eval</button>
+        <button id="resume-eval-btn" class="tiny-btn" disabled>Resume</button>
+        <button id="reload-artifacts-btn" class="tiny-btn" disabled>Refresh artifacts</button>
+        <button id="refresh-tasks-btn">Refresh tasks</button>
+        <button id="language-toggle-btn" class="icon-btn" title="Switch language">ZH</button>
+        <button id="theme-toggle-btn" class="icon-btn" title="Toggle light/dark theme">Theme</button>
+        <button id="toggle-right-btn" class="icon-btn" title="Collapse/expand launch form">Form ◨</button>
+      </div>
+    </header>
+
+    <div id="layout" class="layout">
+      <aside id="sidebar" class="sidebar">
+        <div class="panel-header">
+          <h2>Tasks</h2>
+          <div class="row gap">
+            <span id="task-count" class="muted"></span>
+            <button id="new-task-btn" class="tiny-btn">New</button>
+          </div>
+        </div>
+        <div class="task-group-toolbar">
+          <div class="task-group-toolbar-head">
+            <div class="row gap">
+              <button id="expand-all-tags-btn" class="tiny-btn" type="button">Expand all</button>
+              <button id="collapse-all-tags-btn" class="tiny-btn" type="button">Collapse all</button>
+            </div>
+          </div>
+          <div class="task-tag-editor">
+            <div class="task-tag-input-row">
+              <input id="task-tag-input" type="text" placeholder="" disabled />
+              <button id="task-tag-add-btn" class="tiny-btn" disabled>Add</button>
+              <button id="task-tag-clear-btn" class="tiny-btn" disabled>Clear</button>
+            </div>
+            <div class="task-tag-existing-row">
+              <select id="task-tag-existing-select" class="task-tag-existing-select" disabled>
+                <option value="">Select existing tag</option>
+              </select>
+            </div>
+            <div id="task-tag-list" class="task-tag-list"></div>
+          </div>
+        </div>
+        <div id="task-list" class="task-list"></div>
+      </aside>
+
+      <aside id="eval-runs-pane" class="sidebar eval-runs-pane hidden">
+        <div class="panel-header">
+          <h2>Eval Runs</h2>
+          <span id="eval-runs-count" class="muted"></span>
+        </div>
+        <div id="eval-runs-list" class="task-list eval-runs-list"></div>
+      </aside>
+
+      <main class="main-view">
+        <section class="detail-pane">
+          <div id="run-summary-card" class="task-summary-card">
+            <div class="panel-header">
+              <div class="panel-header-title-row">
+                <h2 id="run-summary-title">Sub-run details</h2>
+                <span id="run-summary-mode" class="panel-header-mode muted hidden"></span>
+              </div>
+              <div class="row gap">
+                <button id="toggle-run-summary-btn" class="tiny-btn" title="Expand/collapse details">Collapse</button>
+              </div>
+            </div>
+            <div class="task-summary-panel">
+              <div id="run-summary" class="summary-grid"></div>
+            </div>
+          </div>
+
+          <div class="detail-content-scroll">
+            <div class="log-grid">
+            <div id="transcript-panel" class="log-panel wide" data-panel-kind="code">
+              <div class="log-titlebar">
+                <div class="log-title">Agent Transcript</div>
+                <div class="log-tools">
+                  <button id="transcript-format-btn" class="tiny-btn active">Card view: on</button>
+                  <button id="transcript-pairing-btn" class="tiny-btn active">Pairing: on</button>
+                  <button class="tiny-btn" data-action="wrap" data-pane="transcript">Wrap: on</button>
+                  <button class="tiny-btn" data-action="fullscreen" data-panel="transcript-panel">Fullscreen</button>
+                </div>
+              </div>
+              <div class="code-viewport" data-viewport="transcript">
+                <pre id="transcript-lines" class="line-gutter" aria-hidden="true"></pre>
+                <pre id="transcript-log" class="code-text wrap-on"></pre>
+              </div>
+            </div>
+
+            <div id="cost-summary-panel" class="log-panel wide" data-panel-kind="code">
+              <div class="log-titlebar">
+                <div class="log-title">Cost Summary</div>
+                <div class="log-tools">
+                  <button id="cost-summary-view-card-btn" class="tiny-btn" type="button">Cards</button>
+                  <button id="cost-summary-view-source-btn" class="tiny-btn" type="button">Source</button>
+                  <button class="tiny-btn" data-action="wrap" data-pane="cost">Wrap: on</button>
+                  <button class="tiny-btn" data-action="fullscreen" data-panel="cost-summary-panel">Fullscreen</button>
+                </div>
+              </div>
+              <div id="cost-summary-card-view" class="cost-summary-card-view"></div>
+              <div id="cost-summary-code-viewport" class="code-viewport code-viewport-tall hidden" data-viewport="cost">
+                <pre id="cost-summary-lines" class="line-gutter" aria-hidden="true"></pre>
+                <pre id="cost-summary-log" class="code-text wrap-on"></pre>
+              </div>
+            </div>
+
+          </div>
+
+            <div class="artifact-layout" id="artifact-layout">
+              <div>
+                <div class="panel-header small"><h3>Key artifacts</h3></div>
+                <ul id="artifact-list" class="artifact-list"></ul>
+              </div>
+              <div id="artifact-layout-resizer" class="splitter splitter-vertical" title="Drag to resize the artifact list and content panes"></div>
+              <div id="artifact-panel" class="log-panel artifact-panel" data-panel-kind="code">
+                <div class="log-titlebar">
+                  <div>
+                    <div class="log-title">Artifact content</div>
+                    <div id="artifact-path" class="muted artifact-path"></div>
+                  </div>
+                  <div class="log-tools">
+                    <button class="tiny-btn" data-action="wrap" data-pane="artifact">Wrap: on</button>
+                    <button class="tiny-btn" data-action="fullscreen" data-panel="artifact-panel">Fullscreen</button>
+                  </div>
+                </div>
+                <div id="artifact-code-viewport" class="code-viewport code-viewport-tall" data-viewport="artifact">
+                  <pre id="artifact-lines" class="line-gutter" aria-hidden="true"></pre>
+                  <pre id="artifact-content" class="code-text wrap-on"></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <aside id="config-pane" class="config-pane">
+        <div class="panel-header">
+          <h2 id="form-title">Launch eval</h2>
+          <div class="tabs">
+            <button id="tab-eval" class="tab active">Eval</button>
+          </div>
+        </div>
+        <div class="form-actions top">
+          <button id="submit-form-btn" type="button">Start eval</button>
+          <button id="reset-form-btn" type="button">Reset defaults</button>
+        </div>
+        <div id="form-hint" class="hint"></div>
+        <form id="dynamic-form" class="dynamic-form"></form>
+      </aside>
+    </div>
+  </div>
+
+  <div id="task-summary-modal" class="modal-overlay hidden" aria-hidden="true">
+    <div id="task-summary-card" class="modal-card task-summary-modal-card hidden">
+      <div class="panel-header">
+        <div class="panel-header-title-row">
+          <h2 id="task-summary-title">Eval details</h2>
+          <span id="task-summary-mode" class="panel-header-mode muted hidden"></span>
+        </div>
+        <div class="row gap">
+          <button id="close-task-summary-modal-btn" class="icon-btn" title="Close task details">Close</button>
+        </div>
+      </div>
+      <div class="task-summary-panel task-summary-modal-panel">
+        <div id="task-summary" class="summary-grid"></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="quick-tag-modal" class="modal-overlay hidden" aria-hidden="true">
+    <div class="modal-card quick-tag-card">
+      <div class="panel-header">
+        <div class="panel-header-title-row">
+          <h3>Edit tags</h3>
+          <span id="quick-tag-task-title" class="panel-header-mode muted"></span>
+        </div>
+        <button id="close-quick-tag-modal-btn" class="icon-btn" title="Close tag editor">Close</button>
+      </div>
+      <div class="modal-body quick-tag-modal-body">
+        <div id="quick-tag-task-meta" class="field-help">Select a task.</div>
+        <div class="task-tag-input-row">
+          <input id="quick-tag-input" type="text" placeholder="" />
+          <button id="quick-tag-add-btn" class="tiny-btn" type="button">Add</button>
+          <button id="quick-tag-clear-btn" class="tiny-btn" type="button">Clear</button>
+        </div>
+        <div class="task-tag-existing-row">
+          <select id="quick-tag-existing-select" class="task-tag-existing-select">
+            <option value="">Select existing tag</option>
+          </select>
+        </div>
+        <div id="quick-tag-list" class="task-tag-list"></div>
+        <div class="row gap modal-actions">
+          <button id="quick-tag-cancel-btn" class="tiny-btn" type="button">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="task-context-menu" class="context-menu hidden" role="menu" aria-hidden="true">
+    <button id="task-context-menu-quick-tag-btn" class="context-menu-item" type="button" role="menuitem">Edit tags</button>
+  </div>
+
+  <div id="tag-context-menu" class="context-menu hidden" role="menu" aria-hidden="true">
+    <button id="tag-context-menu-copy-btn" class="context-menu-item" type="button" role="menuitem">Copy this tag</button>
+  </div>
+
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="/static/app/core/context.js?v=__STATIC_VERSION__"></script>
+  <script src="/static/app/core/i18n.js?v=__STATIC_VERSION__"></script>
+  <script src="/static/app/base/base-core.js?v=__STATIC_VERSION__"></script>
+  <script src="/static/app/base/base-task.js?v=__STATIC_VERSION__"></script>
+  <script src="/static/app/eval/eval.js?v=__STATIC_VERSION__"></script>
+  <script src="/static/app/tasks/tasks-form.js?v=__STATIC_VERSION__"></script>
+  <script src="/static/app/tasks/tasks-modal.js?v=__STATIC_VERSION__"></script>
+  <script src="/static/app/tasks/tasks-tags.js?v=__STATIC_VERSION__"></script>
+  <script src="/static/app/tasks/tasks-list.js?v=__STATIC_VERSION__"></script>
+  <script src="/static/app/summary/summary-common.js?v=__STATIC_VERSION__"></script>
+  <script src="/static/app/summary/summary-eval.js?v=__STATIC_VERSION__"></script>
+  <script src="/static/app/transcript/transcript-parse.js?v=__STATIC_VERSION__"></script>
+  <script src="/static/app/transcript/transcript-knowledge.js?v=__STATIC_VERSION__"></script>
+  <script src="/static/app/transcript/transcript-render.js?v=__STATIC_VERSION__"></script>
+  <script src="/static/app/runtime/panes.js?v=__STATIC_VERSION__"></script>
+  <script src="/static/app/summary/summary-render.js?v=__STATIC_VERSION__"></script>
+  <script src="/static/app/runtime/stream.js?v=__STATIC_VERSION__"></script>
+  <script src="/static/app/runtime/shell.js?v=__STATIC_VERSION__"></script>
+  <script src="/static/app.js?v=__STATIC_VERSION__"></script>
+</body>
+</html>

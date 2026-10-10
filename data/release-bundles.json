@@ -1,0 +1,1293 @@
+{
+  "schema_version": "flowark-release-bundles-v1",
+  "bundles": [
+    {
+      "filename": "flowark-evidence-01-of-02.tar",
+      "release_tag": "flowark-evaluation-logs-v1",
+      "size_bytes": 1889556480,
+      "sha256": "ed945588c7409b179429916a6b63e82395491e8c88f7b698c14a37843c34487e",
+      "members": [
+        {
+          "filename": "paper-knowledge-content-irrelevant-r1.tar.gz",
+          "kind": "evaluation",
+          "size_bytes": 461486880,
+          "sha256": "a031f064ebf14029c2e6539ac684db2b6855975bfafca87bbcc512455d4f606e"
+        },
+        {
+          "filename": "paper-knowledge-content-irrelevant-r2.tar.gz",
+          "kind": "evaluation",
+          "size_bytes": 457085215,
+          "sha256": "f54dc124d75a2da99b4b6a335e1b95455116fcd97b220afcd960257a978573ad"
+        },
+        {
+          "filename": "paper-knowledge-content-irrelevant-r3.tar.gz",
+          "kind": "evaluation",
+          "size_bytes": 436375114,
+          "sha256": "e10adb15e11507bb13b44bbc41e8a67ed48939acb00ba781f867b4bf93c5b69a"
+        },
+        {
+          "filename": "paper-main50-flowark-enabled-opencode.tar.gz",
+          "kind": "evaluation",
+          "size_bytes": 219632209,
+          "sha256": "b8084479fa31c639dcc3190ec60bc7f2352e219d85fa4c309b94170858a98e75"
+        },
+        {
+          "filename": "paper-strat15-glm-5-3-flowark-enabled-opencode-r1.tar.gz",
+          "kind": "evaluation",
+          "size_bytes": 314968732,
+          "sha256": "712fcd8206e4ea0eb974a70935789978106c023f44cc69e97431210a7c818332"
+        }
+      ]
+    },
+    {
+      "filename": "flowark-evidence-02-of-02-5e6a2aec.tar",
+      "release_tag": "flowark-evaluation-logs-v1",
+      "size_bytes": 1885020160,
+      "sha256": "5e6a2aeccbe7fd50f9a9ba71c274d60dab244eed03d9c7383b54ca445bb82fc3",
+      "members": [
+        {
+          "filename": "paper-knowledge-content-flowark-r1.tar.gz",
+          "kind": "evaluation",
+          "size_bytes": 13297499,
+          "sha256": "f3ae0119d41e9f62d57d46e55bfc6d1090d66c82c43569c077675570499c3fe5"
+        },
+        {
+          "filename": "paper-knowledge-content-flowark-r2.tar.gz",
+          "kind": "evaluation",
+          "size_bytes": 13580124,
+          "sha256": "5dfe59ccb62adef1d0a8e181ca66ba43800dac8d9b8c87b14781b67703bc8d42"
+        },
+        {
+          "filename": "paper-knowledge-content-flowark-r3.tar.gz",
+          "kind": "evaluation",
+          "size_bytes": 14102811,
+          "sha256": "42e63de028845b43841e692bc22828f618efed6389ca46c9b605666799fd9768"
+        },
+        {
+          "filename": "paper-knowledge-content-standard-r1.tar.gz",
+          "kind": "evaluation",
+          "size_bytes": 30469494,
+          "sha256": "9c470dc4c111e2e56953dc82ca575460c2713da8ca5d2b698ae42dfc1bbfb7ce"
+        },
+        {
+          "filename": "paper-knowledge-content-standard-r2.tar.gz",
+          "kind": "evaluation",
+          "size_bytes": 29341832,
+          "sha256": "51796ef344431f3a1bf0af5880cc0293c3a8bd8e1e56202e1130ef4b6a1bdcb9"
+        },
+        {
+          "filename": "paper-knowledge-content-standard-r3.tar.gz",
+          "kind": "evaluation",
+          "size_bytes": 29556982,
+          "sha256": "5b93c98a0d9e2d0f454cba9eb39f9b75a04544cc8479fd65cfa592e0f4d7f27b"
+        },
+        {
+          "filename": "paper-main50-standard-opencode.tar.gz",
+          "kind": "evaluation",
+          "size_bytes": 169009469,
+          "sha256": "899298addd50a69f88accffb17e57c491605bce5b6d2e053031824ebc63a148f"
+        },
+        {
+          "filename": "paper-reproduction.tar.gz",
+          "kind": "reproduction",
+          "size_bytes": 18746761,
+          "sha256": "676d5438e97e91f527f9454fbf15e98012852db455cd8d567a45967372927aca"
+        },
+        {
+          "filename": "paper-strat15-ablation-m1-generic.tar.gz",
+          "kind": "evaluation",
+          "size_bytes": 62448361,
+          "sha256": "3c83fa55a728bbeef1d24d99fca98ae47aeedaa20dce5b897b0b849f01f5e403"
+        },
+        {
+          "filename": "paper-strat15-ablation-m2-embedding.tar.gz",
+          "kind": "evaluation",
+          "size_bytes": 63779084,
+          "sha256": "f1caac480b8353223111de5a6f84284c7ecc4b44c2836ff97594abebdc6a64ae"
+        },
+        {
+          "filename": "paper-strat15-ablation-m3-start-only.tar.gz",
+          "kind": "evaluation",
+          "size_bytes": 56575232,
+          "sha256": "9c870ce26d4f9ab823c25c7ad139c829d0a2c28c4eb34380506fd1e59917cf25"
+        },
+        {
+          "filename": "paper-strat15-analysis-log-rag-baseline.tar.gz",
+          "kind": "evaluation",
+          "size_bytes": 82876286,
+          "sha256": "b103a78ab08b604b37bc83ccf7cff9c40a257bd34709496ade623849ca1dd7fa"
+        },
+        {
+          "filename": "paper-strat15-deepseek-v4-flash-flowark-enabled-opencode.tar.gz",
+          "kind": "evaluation",
+          "size_bytes": 53138386,
+          "sha256": "5d7c85f56fff80f6543f438e1cd3a83ac7af7a71b62227bf27a41eea6ab7b26f"
+        },
+        {
+          "filename": "paper-strat15-deepseek-v4-flash-standard-opencode.tar.gz",
+          "kind": "evaluation",
+          "size_bytes": 45359531,
+          "sha256": "d827c0058323e9d113fe6716231287e07ff1337464673509efb56b3f91a8bed2"
+        },
+        {
+          "filename": "paper-strat15-glm-4-7-flowark-enabled-opencode.tar.gz",
+          "kind": "evaluation",
+          "size_bytes": 60509154,
+          "sha256": "2d2577953a62962c4d7667148bdc5502f5540bb2b6af5799439835a8483278ea"
+        },
+        {
+          "filename": "paper-strat15-glm-4-7-standard-opencode.tar.gz",
+          "kind": "evaluation",
+          "size_bytes": 47740149,
+          "sha256": "5e6453f52abc9a80a2027c15795da2186a7857ba75d3eeb1affa21bc0dd94b01"
+        },
+        {
+          "filename": "paper-strat15-glm-5-3-flowark-enabled-opencode-r2.tar.gz",
+          "kind": "evaluation",
+          "size_bytes": 312846673,
+          "sha256": "36f2fb6c4c24d4ef95a74925f6faaf335a8a4dfd1e68f117715fdada0e2b4a22"
+        },
+        {
+          "filename": "paper-strat15-glm-5-3-flowark-enabled-opencode-r3.tar.gz",
+          "kind": "evaluation",
+          "size_bytes": 313560049,
+          "sha256": "14a0a5b3c334c7239d1468bb872d476ba666832e377b62bb4b9a9cd26f7c4aac"
+        },
+        {
+          "filename": "paper-strat15-glm-5-3-standard-opencode-r1.tar.gz",
+          "kind": "evaluation",
+          "size_bytes": 119985563,
+          "sha256": "d445bcae5e9a6f57071ec285eb1205ba44d03ed0732ab8968e750f7e376f14f4"
+        },
+        {
+          "filename": "paper-strat15-glm-5-3-standard-opencode-r2.tar.gz",
+          "kind": "evaluation",
+          "size_bytes": 118731549,
+          "sha256": "3874d7953942a16f41be1051a9cb40b49666022504cefce9756acead23059f64"
+        },
+        {
+          "filename": "paper-strat15-glm-5-3-standard-opencode-r3.tar.gz",
+          "kind": "evaluation",
+          "size_bytes": 119705756,
+          "sha256": "6f15f4ca6b8e75238bc5744fa2528865fe0f790b567a09820df87e4099117bf4"
+        },
+        {
+          "filename": "paper-strat15-mem0-enabled-opencode.tar.gz",
+          "kind": "evaluation",
+          "size_bytes": 40922716,
+          "sha256": "435c78919355e168422026d0ae40601b1cc8d6b3bb9a456abb49e16e465b51f7"
+        },
+        {
+          "filename": "paper-strat15-minimax-m3-flowark-enabled-opencode.tar.gz",
+          "kind": "evaluation",
+          "size_bytes": 37157500,
+          "sha256": "46799be6e4694ff50a1350ae0b17e2215e22d21b4c3295b3348cd8091eb569e2"
+        },
+        {
+          "filename": "paper-strat15-minimax-m3-standard-opencode.tar.gz",
+          "kind": "evaluation",
+          "size_bytes": 31554947,
+          "sha256": "dca5ad05d803fac19d08ff91e0034fff3c0e10e48ed381c22ef22054703a7fe8"
+        }
+      ]
+    },
+    {
+      "filename": "flowark-sources-01-of-09.tar",
+      "release_tag": "flowark-source-archives-v1",
+      "size_bytes": 1899980800,
+      "sha256": "553dd097d6b794f5e2ccd47fb3e6f64c9728018f7c1014263c7eb3ea0a98af0b",
+      "members": [
+        {
+          "filename": "com.cepmuvakkit.times_200_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 1781760,
+          "sha256": "c699e996c0acf09fcdf6ad4f7557dab9ccea1cb70f1bfda777816021c9db271c"
+        },
+        {
+          "filename": "com.gmail.blandilyte.silverdict_134_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 342220800,
+          "sha256": "e7d1f93d376f54e32a4bd54fb668edaed149c91060512607db5bc42cce0e0d71"
+        },
+        {
+          "filename": "helium314.keyboard_3801_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 53155840,
+          "sha256": "c8716f50426c4b9f93d81f63d984fb8c5c52049d1b0fc50fcd80ee3fde84a573"
+        },
+        {
+          "filename": "io.github.friesi23.mhabit_148_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 1502812160,
+          "sha256": "957b6604af5ba900695f7693f838c2cc1ced021f3bbb18d43f56d781ed338c74"
+        }
+      ]
+    },
+    {
+      "filename": "flowark-sources-02-of-09.tar",
+      "release_tag": "flowark-source-archives-v1",
+      "size_bytes": 1899929600,
+      "sha256": "96f8ad6583b44b70ba4d109aa7867a1370ba299f77723e76d3d4d4c727aa7029",
+      "members": [
+        {
+          "filename": "ca.cmetcalfe.xposed.disablebatterywarnings_3_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 81920,
+          "sha256": "7f431283a4cc09db09bfaf1a90571b4c6bbd95d3cea8be24453ad646024fbd81"
+        },
+        {
+          "filename": "in.blogspot.anselmbros.torchie_34_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 1167360,
+          "sha256": "c7beff3192633d5d15391b5f5d52c582220b3373b48c922ec624e25bb21b21cb"
+        },
+        {
+          "filename": "io.github.benderblog.traintime_pda_383_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 1478860800,
+          "sha256": "926e40fba88804b0ba7f4a8097f42a1ed46e667477e6dd553e427a547fd57df8"
+        },
+        {
+          "filename": "pan.alexander.tordnscrypt.stable_26603_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 419809280,
+          "sha256": "d6555b0a4314ceccf706414fe53b5794ebdbed5d77d6883e07f5681ed01b60d0"
+        }
+      ]
+    },
+    {
+      "filename": "flowark-sources-03-of-09.tar",
+      "release_tag": "flowark-source-archives-v1",
+      "size_bytes": 1899827200,
+      "sha256": "0709719487743a4f5c00e13b62342f0ca598d2a470941a9208aecd59af48442f",
+      "members": [
+        {
+          "filename": "com.danhasting.radar_6_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 2723840,
+          "sha256": "6db96f6dd038d75afc7dd17e573f0de1ad1985f1f9c5df9f28c5d3d2a8729ae6"
+        },
+        {
+          "filename": "com.demizo.daily_you_20180003_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 1260369920,
+          "sha256": "84c4c59a1f35a808491e46225073956783012fc9cf0997ecc9274fa07855f2dd"
+        },
+        {
+          "filename": "kzs.th000.tsdm_client_553_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 636405760,
+          "sha256": "4af2115b5987725422a09a642906548485f61b5c3317084598f74060e4c1cf09"
+        },
+        {
+          "filename": "org.bitbucket.watashi564.combapp_4_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 317440,
+          "sha256": "986bf3a8e65e01d83991dcec2499e47dbb814b3df531e9286e9ffc3a4e169dea"
+        }
+      ]
+    },
+    {
+      "filename": "flowark-sources-04-of-09.tar",
+      "release_tag": "flowark-source-archives-v1",
+      "size_bytes": 1899960320,
+      "sha256": "55b712596922587b486777657f55698e0f3c6266420353b09ea4f6bc4a4c1e2f",
+      "members": [
+        {
+          "filename": "app.passwordstore.agrahn_11602_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 6041600,
+          "sha256": "7bee5f02030019c724e97fb61170b29303b622c67d84eca9767ef81e21c0700b"
+        },
+        {
+          "filename": "com.karin.idTech4Amm_11071_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 1119621120,
+          "sha256": "96b99a53c45b61ef8522583ec1ffaa69c4f080a860046dc224456c6c0bc117ba"
+        },
+        {
+          "filename": "jp.nonbili.noutube_4404_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 694056960,
+          "sha256": "c16ae4e8bc117746c31d3cb2700f0cba1b0c7560509ccf08fd29faefd1803e86"
+        },
+        {
+          "filename": "net.thunderbird.android.beta_47_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 80230400,
+          "sha256": "b3e6f2399b50281d8db7f43b68c0a651cb2174da31da8e2754e259739c12616e"
+        }
+      ]
+    },
+    {
+      "filename": "flowark-sources-05-of-09.tar",
+      "release_tag": "flowark-source-archives-v1",
+      "size_bytes": 1899909120,
+      "sha256": "069e92f5acc1f13247a9ba13994e34215e459e62201c9464ed8254fb99fd4806",
+      "members": [
+        {
+          "filename": "dev.linwood.butterfly.nightly_170_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 570439680,
+          "sha256": "4d1d37013aba4ae86ed694b1a1e921780ad5953cec0ec4e251a264a82027f0eb"
+        },
+        {
+          "filename": "dev.linwood.butterfly_167_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 536186880,
+          "sha256": "bc0d5f4fd421033a7f4f40e76c8f5c7629da407fe360743cbf687b1cd64d806c"
+        },
+        {
+          "filename": "jp.nonbili.nora_5704_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 614359040,
+          "sha256": "716a73ac623a217098230d3f97e93b80011fda4fc8fd6eed54a25084590f8328"
+        },
+        {
+          "filename": "me.hackerchick.catima_164_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 15267840,
+          "sha256": "56456c17747764cbbb57196f04364691f172e3aa44098d950a4ed84453fafd62"
+        },
+        {
+          "filename": "org.koreader.launcher.fdroid_116543_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 163645440,
+          "sha256": "9820dcbedbde4b3513cd73d929bb8ea41b4e7f38e46d899360806b7afc16589e"
+        }
+      ]
+    },
+    {
+      "filename": "flowark-sources-06-of-09.tar",
+      "release_tag": "flowark-source-archives-v1",
+      "size_bytes": 1899909120,
+      "sha256": "2e9319081a2c3665d81538655357b4b73f7e90167c4a200e2f8b029796a282c3",
+      "members": [
+        {
+          "filename": "com.flauschcode.broccoli_1040400_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 30679040,
+          "sha256": "3dda482484d33873dc277659b76742afd35c94a9dc4332fa3e7e586e4b52a272"
+        },
+        {
+          "filename": "com.nathanatos.Cuppa_64_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 318781440,
+          "sha256": "87b87a96de92f8a67a11f3729b506d07d5e8fe27c2022ea527fa194f23b6a140"
+        },
+        {
+          "filename": "me.ahmetcetinkaya.whph_78_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 431656960,
+          "sha256": "82336357b944e10ed39aca80a34d5dd0221ee1abee561af51e0be25d30c189fc"
+        },
+        {
+          "filename": "net.casimirlab.frigoligo_41_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 302725120,
+          "sha256": "2cb90d9a4497291d738f2a0a2f1665e819ab544b9ba2b4ff960300cdbd0534bf"
+        },
+        {
+          "filename": "org.eu.mumulhl.ciyue_863000_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 330854400,
+          "sha256": "c6274bf57940aa29e65ddb6eccc399f63afb42d1a57b0108298bbcccd8b61fb2"
+        },
+        {
+          "filename": "org.purplei2p.i2pd_2590000_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 485201920,
+          "sha256": "bbd72a4102a565980a6b0dc82bf07285349f6be537207797f694422565d5e58e"
+        }
+      ]
+    },
+    {
+      "filename": "flowark-sources-07-of-09.tar",
+      "release_tag": "flowark-source-archives-v1",
+      "size_bytes": 1899960320,
+      "sha256": "15c60cd63c008da9b5378edbe1f73aed4d6b2946d5ebf26219d5fbfdef5c43a7",
+      "members": [
+        {
+          "filename": "app.wispar.wispar_30_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 280442880,
+          "sha256": "b33b57571232bdaa91a90627f1c2e0ebca10108face92cb2081c22205b7604ad"
+        },
+        {
+          "filename": "com.app.equran_203_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 281108480,
+          "sha256": "11e15240cb053c85cb20281452ee08f414db8d2e87c25d00f166e7fb7032c006"
+        },
+        {
+          "filename": "com.derdilla.bloodPressureApp_54_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 293959680,
+          "sha256": "134460d3868b7b049dbd098048fbd79744584de095b2e5794356303cb3b9dabc"
+        },
+        {
+          "filename": "com.ferrarid.converterpro_52_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 278128640,
+          "sha256": "7349ca015d4a1eda422e012710620105caf2a6fad93d7f5ea6f6255ca0bae4b7"
+        },
+        {
+          "filename": "com.github.yeriomin.dumbphoneassistant_5_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 184320,
+          "sha256": "482a193146646b7e2b4eefa1f4b3d46f161ab232666b1a2cf0e81d3945c38ecb"
+        },
+        {
+          "filename": "com.jaimegonzalezfabregas.shoppinglist_4_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 280268800,
+          "sha256": "3467e40005c066996783784f809efc6ff53da8e8c581135dc24e7bbcf566e37d"
+        },
+        {
+          "filename": "com.mookie.circo_23_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 243394560,
+          "sha256": "aff7fd14db6b80ecf4e17e1ec0dde288b9c38f21345694d5c50d5191df15b1b6"
+        },
+        {
+          "filename": "de.danoeh.antennapod_3110095_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 242462720,
+          "sha256": "fc836be07d4c23b0be642539418ffa86f9eb20dd6ade3ea7c33c69a47728fba0"
+        }
+      ]
+    },
+    {
+      "filename": "flowark-sources-08-of-09.tar",
+      "release_tag": "flowark-source-archives-v1",
+      "size_bytes": 1899888640,
+      "sha256": "179e87758a2ecc0b28209fd335b2c9d3fe62a2b927b58747253bf0927f61f2b5",
+      "members": [
+        {
+          "filename": "cash.p.terminal_229_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 51312640,
+          "sha256": "79128272092dfd89092c044c52cf3c2a821aec0fdbd6549aa58017e0ee63eadb"
+        },
+        {
+          "filename": "com.capyreader.app_1202_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 28139520,
+          "sha256": "2a71e2c117e0c08e0f064f4d9ce04b8c3b911183ad69ccca53b26611a252dd2a"
+        },
+        {
+          "filename": "com.darkrockstudios.app.securecamera_30_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 76052480,
+          "sha256": "1874a22898c2b964857ec8de461890297faab96c7712d2e849a18275f7bdb1a9"
+        },
+        {
+          "filename": "com.duckduckgo.mobile.android_52702000_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 105697280,
+          "sha256": "089399097ef4778df88f981e722a8c52b3c585d6ce643e93e71ea9ef50b9b966"
+        },
+        {
+          "filename": "com.fsck.k9_39034_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 106885120,
+          "sha256": "117a066779e55e263be38cc8048018a4efa6900709711cb958872b19250b8516"
+        },
+        {
+          "filename": "com.inspiredandroid.kai_74_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 88330240,
+          "sha256": "4992fc2756efd63aeb8c1b3587c42c0c3b5b38a1f38000254a203cddc756ff7f"
+        },
+        {
+          "filename": "com.nononsenseapps.feeder_3922_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 55152640,
+          "sha256": "df9c56bc6c8d0c95f8ea7909a1a041c32cfe11c1e1fc5190f9a29c9bc97c2218"
+        },
+        {
+          "filename": "com.simplemobiletools.flashlight_66_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 75458560,
+          "sha256": "386b96c95d2d5937cbfaf69c17beb9a022d23ca3645ef385dc1076aabd3733b6"
+        },
+        {
+          "filename": "com.unciv.app_1210_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 95406080,
+          "sha256": "bec33687015ee5c16d9c8217040898daab9dfe817ffd563275727842090217b4"
+        },
+        {
+          "filename": "com.woefe.shoppinglist_12_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 378880,
+          "sha256": "c644dfb3ae151dc224e689e19917976f057e7bc3b92bea42dda08f8d46615951"
+        },
+        {
+          "filename": "de.westnordost.streetcomplete.expert_6302_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 191846400,
+          "sha256": "7e7e8781fcee4ae9b436dd6ec6f2486c5db41702fe4f04bc85e96d4119d5a53a"
+        },
+        {
+          "filename": "eu.darken.sdmse_10605000_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 75847680,
+          "sha256": "f6609d718ce52fd8a443fe5ab370b307635a08893446c8462fae2ef40952f08c"
+        },
+        {
+          "filename": "fr.neamar.kiss_219_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 134256640,
+          "sha256": "8310e78b8a8adf371193800689bea7ef013f29ce9cb010525426d06a13f439a0"
+        },
+        {
+          "filename": "me.knighthat.kreate_133_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 52080640,
+          "sha256": "a8832a94569b7186c92401cd8d8d048b1cda9f8d569c0c4e140c283fe7e9cf58"
+        },
+        {
+          "filename": "net.nymtech.nymvpn_30000_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 63139840,
+          "sha256": "3bf6e5d952e7ff6e7c99f82c65c7ba31c0d75d52092a2e234a0e4e202b6b835b"
+        },
+        {
+          "filename": "net.thunderbird.android_21_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 107294720,
+          "sha256": "9df57b48a5bf034dbeb54116aa5a6416115ee624bf3271e884e6f1de30e63643"
+        },
+        {
+          "filename": "nodomain.freeyourgadget.gadgetbridge_246_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 69570560,
+          "sha256": "52d811aedc4e30ef8a1a16a766f51c526a0199ab16621f1e5653e093030a6e02"
+        },
+        {
+          "filename": "org.openobservatory.ooniprobe_274_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 87992320,
+          "sha256": "2dd77438a00e5f41673c38b5ba8251032f99451fc96818c363965edc7845e035"
+        },
+        {
+          "filename": "org.totschnig.myexpenses_835_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 99993600,
+          "sha256": "d1d5e48da0ef280fd4ec71afbd95dd2655db1e665400fd4510101f6d7c3568fd"
+        },
+        {
+          "filename": "org.xphnx.ameixa_4111_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 90531840,
+          "sha256": "4007230a5072f08e2b6b3a3b9396bb678a2db03616c7efd86b8f8f0c4062fa1b"
+        },
+        {
+          "filename": "player.efis.pfd_93_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 70256640,
+          "sha256": "6192b9b1223d1a01d2f66d60d923f29eebc82e520d7e546d7abc209412650692"
+        },
+        {
+          "filename": "site.leos.apps.lespas_114_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 43806720,
+          "sha256": "57202e604fc0909aa92a90625832a256903d1f1ffa9958b640742807d9c6aa14"
+        },
+        {
+          "filename": "uk.co.busydoingnothing.prevo_27_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 130437120,
+          "sha256": "49d4858a051860a09fbe3f6d07cf366d5403313d839c130abd5854fa175d6572"
+        }
+      ]
+    },
+    {
+      "filename": "flowark-sources-09-of-09.tar",
+      "release_tag": "flowark-source-archives-v1",
+      "size_bytes": 1462804480,
+      "sha256": "70ed76572000183e2ce528fe0de7f2b208db06163189dcd64ac6405923ef8923",
+      "members": [
+        {
+          "filename": "app.pachli_46_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 32798720,
+          "sha256": "396abc2495c88e245193814a8801c5ac13d332a9d8fa0fd801a2f1f6d8e8db3c"
+        },
+        {
+          "filename": "app.simple.peri_953_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 34805760,
+          "sha256": "3b30a0a9397fd5f2939cb4fdfee156709bfe14c686dc50d6e5737d7133d7393f"
+        },
+        {
+          "filename": "biz.binarysolutions.healthybatterycharging_23_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 15370240,
+          "sha256": "c68517463c886646bc8c0bfed5f21a7ff9d9bbb30310632f69733b31189916e8"
+        },
+        {
+          "filename": "cl.coders.faketraveler_230_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 15605760,
+          "sha256": "64d6082837cf471774732ac2b8ada54b4e9cb121563a0773c0070d675de8f0aa"
+        },
+        {
+          "filename": "com.activitymanager_561_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 3348480,
+          "sha256": "d747efcfa139662d24ee4a44919f9b4d585abbb29f0fee1f5aea511eb3ce6fc4"
+        },
+        {
+          "filename": "com.aidinhut.simpletextcrypt_17_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 983040,
+          "sha256": "14d56774165b02ddc01f02e934f36f75d03764aa1cc1c1b1718dd3c65db6755e"
+        },
+        {
+          "filename": "com.amaze.filemanager_124_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 13086720,
+          "sha256": "d4a93198735c457eb4b0e61c21348f3e04c8616fe32432c327bd5a02f23f38c5"
+        },
+        {
+          "filename": "com.appengine.paranoid_android.lost_12_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 307200,
+          "sha256": "d591ece9d7d9c8b935a1e80d7248da07e6b79c996ac34db5263752e4035e8c88"
+        },
+        {
+          "filename": "com.atharok.btremote_22_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 5765120,
+          "sha256": "6cd13a1da19830b490577b8cdb67edb62289ea692add13f2ca90af3515eceee7"
+        },
+        {
+          "filename": "com.aurora.store_73_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 10762240,
+          "sha256": "ab8556968d5ece85be2cf16c36682025759d5b31b192af6b0715017e7aad8429"
+        },
+        {
+          "filename": "com.best.deskclock_2031_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 25896960,
+          "sha256": "3ad59082c2b8788dd72cddc32ecd5f19df4ca95355f6c121b8a6c3821431c726"
+        },
+        {
+          "filename": "com.blacksquircle.ui_10028_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 21043200,
+          "sha256": "74f1504d0c94e362afbf166fe264c4c8f155dcdddd66208c41bd8543d2cc1439"
+        },
+        {
+          "filename": "com.bobek.metronome_24_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 8663040,
+          "sha256": "6bdf967116c9bd5611c2142b303b91a800f6b7aacc17d7a9b98fd3e1e8838fca"
+        },
+        {
+          "filename": "com.daniebeler.pfpixelix_36_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 39669760,
+          "sha256": "f9fb0510c62252b51c9ff3165b341c0eacc86ee15f8d8d03cf7a587d72725a2b"
+        },
+        {
+          "filename": "com.dede.android_eggs_72_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 23060480,
+          "sha256": "b31220b60dccd71b3bbd5981031d67fb50d4d91131540af0c2aaef78bf9b1f64"
+        },
+        {
+          "filename": "com.dimtion.shaarlier_33_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 512000,
+          "sha256": "51d76b72237e81c9cf5840d72a86de2a3ef94439d96c0e82edf943f737b450a4"
+        },
+        {
+          "filename": "com.enjoyingfoss.feeel_4241_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 12298240,
+          "sha256": "466658d6f8b8f89ce7271d87a973a4a0193fb406e0bd8be0c9f9106763bf10a3"
+        },
+        {
+          "filename": "com.forrestguice.suntimeswidget_128_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 31365120,
+          "sha256": "437cd9b295591c9caab9a9bf5dbd3ca1cd9fe7533e8bd0854b9d3dc9b6436db6"
+        },
+        {
+          "filename": "com.gcstar.viewer_14_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 1802240,
+          "sha256": "99c57b481be7f3695f37333960fa3362c38ccfae58169e09d9e224ef659c6eb4"
+        },
+        {
+          "filename": "com.github.catfriend1.syncthingfork_2001500_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 29982720,
+          "sha256": "39ece8c35b7c53da4e49d1bdb60edefef27f97f96cb3c3d15be811f9950dadb8"
+        },
+        {
+          "filename": "com.github.howeyc.crocgui_44_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 11161600,
+          "sha256": "4e4d96fc39f777c4f306fd10dc3ff90d3f9473c3bd796ff5fd13efc0682e8864"
+        },
+        {
+          "filename": "com.grocerymanager_1_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 2304000,
+          "sha256": "4bbe5e17345be30d27e26bdf1e41c24f7e71413f92cda12f11cdb682acfb9ba5"
+        },
+        {
+          "filename": "com.igisw.openmoneybox_66_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 17612800,
+          "sha256": "eb385fbe6b751f522afc26b155255deb43fe92391db9275923514eaed7743b0e"
+        },
+        {
+          "filename": "com.keylesspalace.tusky_140_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 23183360,
+          "sha256": "3ad81af24f45ec31eeab4d1e8d3164b302b6672a0449408b998d3607ac7a3a9f"
+        },
+        {
+          "filename": "com.kgurgul.cpuinfo_60601_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 5765120,
+          "sha256": "c6805c9c1a9200ee9549c3f72acf4749a87ae17cf6deba27f3256450dbeeed97"
+        },
+        {
+          "filename": "com.kunzisoft.keepass.libre_153_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 18073600,
+          "sha256": "41a831f57b76b9286b78a28d165124d61d0c40acf2d7c32a2030373567a7e70e"
+        },
+        {
+          "filename": "com.llamacorp.equate_12_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 798720,
+          "sha256": "5b32d1b9d470a12f493e5f8f25896b80ab58413e314a7b339bc01f720857e4cc"
+        },
+        {
+          "filename": "com.machiav3lli.fdroid_1207_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 30115840,
+          "sha256": "c4eb44a8a0414b8f12f94ab73272668474c8ae9c22a2a65b8f99c5555aa9d27c"
+        },
+        {
+          "filename": "com.maksimowiczm.foodyou_119_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 10301440,
+          "sha256": "df3972b8b6deea107562445a75463bc9fd4abfc03075d07d5ba17172ae6c7023"
+        },
+        {
+          "filename": "com.marktka.calculatorYou_33_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 15974400,
+          "sha256": "404305d1c35ac013c41a76fdd22171a165fb7a8472150e7522964b0f1836e74b"
+        },
+        {
+          "filename": "com.mendhak.gpslogger_135_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 22323200,
+          "sha256": "a8b086d06e7eed66dd8a828e2b85d528028375321ee14823b7fc55e70a37a6a6"
+        },
+        {
+          "filename": "com.mkulesh.micromath.plus_325_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 29491200,
+          "sha256": "05347d7e91c38be0a5e7e812d752261a71bdb1182ec22bce7f3f5460a78a9378"
+        },
+        {
+          "filename": "com.phpbg.easysync_23_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 3368960,
+          "sha256": "e5cc651f7d17b86ad16a728f89b60994e5dd8e7ed9b5082bf97bb2e949b3772a"
+        },
+        {
+          "filename": "com.rootminusone8004.bazarnote_13_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 706560,
+          "sha256": "165ec58bca20e03741cff0fbdb6a3bbe902dae7549fde961ba7efbfb9bbad52c"
+        },
+        {
+          "filename": "com.simplexray.an_38_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 10823680,
+          "sha256": "3de544e9d11e826bb1d89d2b08ce27674bf2e3d4e5381dc7950543c844a5c973"
+        },
+        {
+          "filename": "com.skyd.anivu_29_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 7997440,
+          "sha256": "788dea523bf387cf734ec3d9a2f0a29e3b8e60e357f096648e3758f520bc01c8"
+        },
+        {
+          "filename": "com.studio4plus.homerplayer2_38_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 11479040,
+          "sha256": "46df881a5fd81121c8a7047fe83ed1204d5688e5d18f5f72cb982564e220d98b"
+        },
+        {
+          "filename": "com.tutpro.baresip_483_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 6154240,
+          "sha256": "4b1891a609f421231508b33b5ce4533e0bc09abd82d9dfc638bced38d3d584f7"
+        },
+        {
+          "filename": "com.vrem.wifianalyzer_71_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 5591040,
+          "sha256": "ae159dcedb2b65776fc3eee33c0c048ab17da0fdc294d54400b683ce3f08a05b"
+        },
+        {
+          "filename": "com.yosefario.nclientv3_421_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 27822080,
+          "sha256": "021be6ffede554aa0204a7c766a4a4f1872af94aa0ae5a275a14a0e60628b215"
+        },
+        {
+          "filename": "com.zorinos.zorin_connect_13304_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 11468800,
+          "sha256": "68a848bcf057d5a53508a34e20f7d5036d0f9ee9df74d2e20e08fae7357de320"
+        },
+        {
+          "filename": "de.chaosdorf.meteroid_60_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 2201600,
+          "sha256": "b72a56857c948ef79200d28b1e546721b478048ded7134218457db1d2978e5af"
+        },
+        {
+          "filename": "de.jrpie.android.launcher_56_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 5406720,
+          "sha256": "d31e34799c4ecd545464e4a9a3910a903aa8e0527fd53b549e5c88c566c3416a"
+        },
+        {
+          "filename": "de.lukasneugebauer.nextcloudcookbook_62_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 16424960,
+          "sha256": "89a0817682ea07f47e486d04ab8cb0b3055ec809de0258f9e89d98ae3f1f5b3f"
+        },
+        {
+          "filename": "de.markusfisch.android.wavelines_27_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 819200,
+          "sha256": "9d61a61b82fce81e4a6669028b44b8f4c45bd909dd38cdf34e55ed9809bdf68c"
+        },
+        {
+          "filename": "de.moekadu.tuner_47_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 4218880,
+          "sha256": "afd921cdeb32db0d74cd419dd679ac0a2aa01f5a76a2c6c02b5ffab210e9b984"
+        },
+        {
+          "filename": "de.monocles.browser_14_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 31539200,
+          "sha256": "123f5f6de1c8d24360cceb32a72ee43277050487d21e0b64fe63175aad91176b"
+        },
+        {
+          "filename": "de.monocles.chat_20004_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 32102400,
+          "sha256": "cac3cbc3b302ae638de9046d4e184ef3b38c2b730b65f7df7e2c47c515b25fc8"
+        },
+        {
+          "filename": "de.nulide.findmydevice_39_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 4003840,
+          "sha256": "c7c17dc841a9f61c03024e9a39ee9b577815b9c548da1a0100716bbf332f3414"
+        },
+        {
+          "filename": "de.schildbach.oeffi_140001_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 3952640,
+          "sha256": "bff71b2af5da8ad4ff25339a7824a27e5f58309c5f7538c53d3de95960691dc9"
+        },
+        {
+          "filename": "de.schliweb.bluesharpbendingapp_30700_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 4362240,
+          "sha256": "4ce1143bce09c44b28a7e6742e37b8bacfc4bd346b47ba2d430f4d058ccda5e2"
+        },
+        {
+          "filename": "de.storchp.fdroidbuildstatus_118_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 4802560,
+          "sha256": "f7968920fa57d020bf26c9c39712db4cf33b542549ff5737068d120c86f4bbca"
+        },
+        {
+          "filename": "deltazero.amarok.foss_118_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 4556800,
+          "sha256": "7c46fcc122624b55b5d0ab9c2355e8a60e4daafc9bfd1574d3cecbd7228c08bf"
+        },
+        {
+          "filename": "dev.clombardo.dnsnet_67_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 24258560,
+          "sha256": "f94d21a849b73cd928ace90783e1a243ee8ea465bc30a1cea05bb2e9331abab5"
+        },
+        {
+          "filename": "eu.roggstar.luigithehunter.batterycalibrate_13_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 1382400,
+          "sha256": "1464eeedf55aad6343b92924a03c02273bc37ae9bfcd01bdcfbb7b99a1446c8f"
+        },
+        {
+          "filename": "eu.siacs.conversations_4217104_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 18401280,
+          "sha256": "beef13927ee13d6befb3431eb9ef916dbb2c9c2dcbb29f68ab0a535e81e1348a"
+        },
+        {
+          "filename": "eu.zimbelstern.tournant_41_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 31733760,
+          "sha256": "83b9319d8a84fbbd05b69e96ac08ffdd2b55300c59c7cc010d2c288a49435cc8"
+        },
+        {
+          "filename": "fr.fdesousa.bikesharinghub_34_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 30525440,
+          "sha256": "1e0c30874c989d60c12cbeda67d7b0be392daec28407a588bfda7805ad572397"
+        },
+        {
+          "filename": "fr.gouv.etalab.mastodon_549_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 29921280,
+          "sha256": "e80739be8201a9715a3e08c587f4b0409dd61708798b3a930d499a37ed5ebd4c"
+        },
+        {
+          "filename": "fr.jnda.android.flashalert_23384363_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 3563520,
+          "sha256": "e1d64e399442d3425e9d2b217fea38bfc0e00627018e78df91cf0e403e905ece"
+        },
+        {
+          "filename": "fr.nocle.passegares_304_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 13793280,
+          "sha256": "abeaf45ed3a4d71fe2ddb48bb15e74bb8b4bd6ca722b352c449f5777f5366072"
+        },
+        {
+          "filename": "im.quicksy.client_4217104_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 18401280,
+          "sha256": "ebc7e69d12abf8a59bbf3b3e2b1dc7d0702cdafa05dc70abea50daab57672da1"
+        },
+        {
+          "filename": "indi.dmzz_yyhyy.lightnovelreader_10200030_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 7024640,
+          "sha256": "b67fe3e37f83011e61e42f022b240d831c0ba1ee0b7161879b3f04bbb49dc6bc"
+        },
+        {
+          "filename": "io.github.drumber.kitsune_39_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 26931200,
+          "sha256": "7918a338c8a5f24d426f11f7173a95efd9155d80b6abb0f0538c0741ab0bbce9"
+        },
+        {
+          "filename": "io.github.exclude0122.xivpn_433_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 2181120,
+          "sha256": "6377eadedc78170f3a2c9efc306bb19e4244cfc9e1c982049e96438c948857e1"
+        },
+        {
+          "filename": "io.github.gonbei774.calisthenicsmemory_28_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 5529600,
+          "sha256": "b493853d503eced84de0a58259f6915b83184dc6f5c02bd4546ce9ecced8b7f1"
+        },
+        {
+          "filename": "it.niedermann.owncloud.notes_330000090_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 10485760,
+          "sha256": "81874e31a88299e64fa15356d299f3ff7913ae0b8084361ad715f9da4f39a735"
+        },
+        {
+          "filename": "it.reyboz.bustorino_71_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 8366080,
+          "sha256": "c944ade076057f24296b4d31280af61a2dde4d50abcfe6a240d09b8ab61f06c5"
+        },
+        {
+          "filename": "lying.fengfeng.foodrecords_23_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 18708480,
+          "sha256": "baf482769a6be52a7ad7ac63d9a08c84652a4e54a5a046256a2c5d9a61286f2e"
+        },
+        {
+          "filename": "me.iacn.mbestyle_27_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 10526720,
+          "sha256": "64aa31fbb9cd5829289d57c07491191db02eafcb648eaf25089778ec29ddf1f1"
+        },
+        {
+          "filename": "me.impa.knockonports_360010700_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 4802560,
+          "sha256": "a1486baee2f8fc716200679830403fcef164e012ad2e85aebc19c2e48b27fe2a"
+        },
+        {
+          "filename": "me.zhanghai.android.files_39_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 8448000,
+          "sha256": "3b35020d0d6832dc977223721391fe037bddc463a4622b2743e5d2e7495addba"
+        },
+        {
+          "filename": "net.bible.android.activity_910_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 20305920,
+          "sha256": "91e74a1cb357ed3dfeb7be92a247ae33971b854ed18b08cf24e9aa37c9a5a014"
+        },
+        {
+          "filename": "net.kollnig.missioncontrol.fdroid_2025121801_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 18769920,
+          "sha256": "d4e610db8ecd89d0d9c2c1330671b410b30a1553548fdfe7bb167048901f50a4"
+        },
+        {
+          "filename": "net.slions.fulguris.full.fdroid_260_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 38942720,
+          "sha256": "3099c84547bb974dc33496ea4a60d80e9239e34a27e5f0c3d28aaa1017adfd3e"
+        },
+        {
+          "filename": "net.taler.wallet.fdroid_774_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 4628480,
+          "sha256": "550fc590cc37c3c734e4af728ffa7634d79ed71279f728ab1ba54d5432475c1b"
+        },
+        {
+          "filename": "nz.eloque.foss_wallet_100_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 3543040,
+          "sha256": "3fed94cc3c344748ddcbc17c72c1921812263949a9382b01c1988a1ebc1cfa2a"
+        },
+        {
+          "filename": "org.birthdayadapter_31104_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 3358720,
+          "sha256": "3f43ac298ae2a0d902d717896a55b6e2d7d99113c4ac2a5b355f58ed45626b9b"
+        },
+        {
+          "filename": "org.breezyweather_60103_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 32215040,
+          "sha256": "b215d9d676076d013bdbc8657c1c04cc4f6006afda16b8497c0ce6b2069ed75d"
+        },
+        {
+          "filename": "org.equeim.tremotesf_4063_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 26654720,
+          "sha256": "6a60d7aa568d20983e8d53becb1ce13e2879990f8b99dda9be8c8766a016c158"
+        },
+        {
+          "filename": "org.fdroid.fdroid_1023052_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 19374080,
+          "sha256": "46e3be3fea24ccf709bb3558fcbed2d4c355ace3954eab49796df7e608cb747d"
+        },
+        {
+          "filename": "org.fossify.calendar_20_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 13752320,
+          "sha256": "a1a07c0e5340fd09bb8efa17fe3596f4137a27d115edb41c154cadfd980e543d"
+        },
+        {
+          "filename": "org.fossify.clock_10_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 4044800,
+          "sha256": "3d5699de863d54f1ec9474459ef74aae6b2a312de60b68b5569ddd7b0883aceb"
+        },
+        {
+          "filename": "org.fossify.contacts_13_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 6369280,
+          "sha256": "8b4f30dfdc1192d3b9d5f4f4b300a46b9b4e27249c8c078da8dafda6c59e88a8"
+        },
+        {
+          "filename": "org.fossify.gallery_28_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 34375680,
+          "sha256": "7244dcf3b2761e5f32ea0a616dc7e1b44aa3c5370592e7e705e6fc19e781fe1b"
+        },
+        {
+          "filename": "org.fossify.home_16_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 4382720,
+          "sha256": "df04a57ee4550e81c5d66aaa57ae168eb1cf5522c6219b76945ad2c42f0b9fcd"
+        },
+        {
+          "filename": "org.fossify.keyboard_14_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 10670080,
+          "sha256": "b9408e18a0b2e4376831883bd676c3e90076471a1d9408e8ae9799b0235ffad2"
+        },
+        {
+          "filename": "org.fossify.math_10_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 8919040,
+          "sha256": "455827b655cab8326bffeaca560fda77d58dcbed4adc42bbbd3a8b4467e272b3"
+        },
+        {
+          "filename": "org.fossify.musicplayer_14_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 7403520,
+          "sha256": "4b9f5486ad172c8b2d96a3e51dca44b4bcfcb0328e43438347244cd97ae3dedb"
+        },
+        {
+          "filename": "org.fossify.notes_13_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 11212800,
+          "sha256": "13c3279f7107dd35c3280d2e8cb7796551afc88a8b81efa5adb076f5f1ec252e"
+        },
+        {
+          "filename": "org.fossify.paint_7_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 1873920,
+          "sha256": "6cf28abb4afa5522ebe992ec70e6127d4cc527079e6573861e6f0b0b1db0a497"
+        },
+        {
+          "filename": "org.joinmastodon.android_165_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 21043200,
+          "sha256": "846fe08481b040f14ec6a482ed378e49a1a76e19dd4c43469b1faa5a2e934274"
+        },
+        {
+          "filename": "org.kde.kdeconnect_tp_13505_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 6717440,
+          "sha256": "31b28cc438d9fb68264a1af03fe39972a7488f0a096311d555cb4bf01ba262fb"
+        },
+        {
+          "filename": "org.ojrandom.paiesque_37_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 5560320,
+          "sha256": "4d74fbd10afdce4d01f027626c223d9c8e7a83a2b054dcc61ef9e9334bcfcc64"
+        },
+        {
+          "filename": "org.quantumbadger.redreader_116_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 6604800,
+          "sha256": "234f40346f9b818e59dc18fafe83c0ba85ca9b235914e0ddef4ebd4f0a5862e9"
+        },
+        {
+          "filename": "org.runnerup.free_23000370_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 6748160,
+          "sha256": "15d4652e0fe2d8256c7f41c5f7e3110ce464589b4169d2f9930fe1b9a93b38ad"
+        },
+        {
+          "filename": "org.schabi.newpipe_1009_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 28067840,
+          "sha256": "e4e9dcff7c83bc633e0afd10bc5dd2e3135ece1318234d35bc3d885abeddcf03"
+        },
+        {
+          "filename": "org.schabi.nxbookmarks_24_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 6645760,
+          "sha256": "b062d1a106a3cd6b599002333d91e2922e2c5921a57ce2c1b8796f58ea7281eb"
+        },
+        {
+          "filename": "org.sensors2.osc_28_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 2078720,
+          "sha256": "86444d90d5a87bffdb11b3e69cd73df8d1050afb76307ef012f4c0e497e19c85"
+        },
+        {
+          "filename": "org.woheller69.whisper_36_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 2232320,
+          "sha256": "76cd08b6ca3602646ddde9046a833e34cadb0366c95196a607bf84ce4138c503"
+        },
+        {
+          "filename": "org.y20k.trackbook_59_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 16097280,
+          "sha256": "4a7741828df936fe4ac73150439518bcdefa25c9e8f31f484d6f7ff69db062f7"
+        },
+        {
+          "filename": "org.y20k.transistor_113_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 5857280,
+          "sha256": "6608ace6b6684dd1ef3969243c398e9e32a6972b5037474c3c89a8c336aa6436"
+        },
+        {
+          "filename": "pl.lebihan.authnkey_7_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 2017280,
+          "sha256": "1aaf4b997be3d7365930f40f8df180bfd518bc967cf851a9912513daaa6323db"
+        },
+        {
+          "filename": "player.phonograph.plus_1120_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 8099840,
+          "sha256": "be0a856426b76d832659c2ade63631e56c30d3c991625d1c442cdd8ce97870e7"
+        },
+        {
+          "filename": "protect.gift_card_guard_6_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 3799040,
+          "sha256": "ac924f2651d4f17c47ad7e117df6bbd59851ff7146dcf6a9d13212a53a50206e"
+        },
+        {
+          "filename": "rocks.poopjournal.flashy_33_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 17582080,
+          "sha256": "fecae510b98f9568bcee5c297e31706e82f9571324e4a757abcfe0266d259797"
+        },
+        {
+          "filename": "rocks.poopjournal.fucksgiven_12_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 4823040,
+          "sha256": "bd9b4a4551483d762707917aaef5b98ee62d9b6c90cb2af51cba1c4660771149"
+        },
+        {
+          "filename": "souch.smp_33_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 8284160,
+          "sha256": "3cd0e404e754853d9dff15c8557dd36c2a90ce3b3df56c16b2db6a28593b7912"
+        },
+        {
+          "filename": "starcom.snd_5_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 491520,
+          "sha256": "9ba1c1c0a44556a1af376820e5a817adbc65a2fa133b6f0f3d5e2d96254e4cf6"
+        },
+        {
+          "filename": "top.yztz.msggo_26000309_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 9246720,
+          "sha256": "6483d93c4611b22604b9e9b63f2575b16bff7116911075e71a866c00195a166c"
+        },
+        {
+          "filename": "uk.org.boddie.android.weatherforecast_173_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 18575360,
+          "sha256": "f61c5783c0d188532d31b1ef6b3606f55797f3fc85afb777573bfa4f3a6c2d63"
+        },
+        {
+          "filename": "uk.org.ngo.squeezer_154_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 10178560,
+          "sha256": "7fef83ac3477586dacb787d9090b0eaf311f3f69ce3acd934af7247c083aeffb"
+        },
+        {
+          "filename": "ws.xsoh.etar_53_src.tar.gz",
+          "kind": "source",
+          "size_bytes": 12175360,
+          "sha256": "ca4ca77a6df8dc573ddaa781362f88a7466530fdf5603193be0b911d30730624"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+4fe1bcf3c63161e5a978838acda4190d3b2cb843ba36caa9d676d4074f8d585a  paper-strat15-relative-f1-manual-audit.tar.gz

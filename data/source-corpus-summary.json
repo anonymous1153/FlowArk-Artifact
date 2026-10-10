@@ -1,0 +1,55 @@
+{
+  "schema_version": "flowark-source-corpus-v1",
+  "revision": "2026-10-01-171-apps",
+  "application_identity": "package_name",
+  "source_manifest": "data/source-archives-manifest.csv",
+  "source_inventory": "data/source-inventory.jsonl",
+  "source_inventory_sha256": "cdca669182b3a66f3f4db39f202795c59006fe12704e443d21ff9002e400b4c8",
+  "app_count": 171,
+  "apps_with_eligible_sources": 150,
+  "apps_without_eligible_sources": 21,
+  "eligible_source_occurrences": 5890,
+  "source_family_counts": {
+    "platform_api": 504,
+    "ui_input": 1425,
+    "persistent_storage": 2702,
+    "remote_payload": 594,
+    "icc_payload": 665
+  },
+  "source_subtypes": 27,
+  "source_archive_total_bytes": 16662016000,
+  "workloads": {
+    "Main49": {
+      "benchmark": "data/benchmarks/source-first-v3.2-main50.template.json",
+      "app_count": 49,
+      "source_occurrences": 4649,
+      "source_family_counts": {
+        "persistent_storage": 2284,
+        "remote_payload": 465,
+        "ui_input": 1074,
+        "icc_payload": 484,
+        "platform_api": 342
+      },
+      "source_subtypes": 26,
+      "coverage_numerator": 4649,
+      "coverage_denominator": 5890,
+      "source_coverage_percent": 78.93039049235993
+    },
+    "Strat15": {
+      "benchmark": "data/benchmarks/source-first-v3.2-strat15.template.json",
+      "app_count": 15,
+      "source_occurrences": 1284,
+      "source_family_counts": {
+        "icc_payload": 119,
+        "persistent_storage": 592,
+        "platform_api": 149,
+        "remote_payload": 116,
+        "ui_input": 308
+      },
+      "source_subtypes": 24,
+      "coverage_numerator": 1284,
+      "coverage_denominator": 5890,
+      "source_coverage_percent": 21.79966044142615
+    }
+  }
+}
